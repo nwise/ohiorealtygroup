@@ -1,0 +1,6 @@
+page.hide 'hide_page_form_button'
+page['new_page'].visual_effect :blind_up
+page.delay(1) do
+  page.replace_html 'new_page', ''
+end
+page.show 'new_page_button'

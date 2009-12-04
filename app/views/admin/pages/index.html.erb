@@ -1,0 +1,36 @@
+<div id="copy">
+<div id="new_page" style="display:none"></div>
+<div id="new_page_link">
+<%= link_to_remote image_tag('admin_icons/add.png', :alt => 'New Page') + 'New Page',
+                       {:url => '/admin/pages/show_form'},
+                       :href => url_for(new_admin_page_path), :id => 'new_page_button', :class => 'button' %>
+<%= link_to_remote image_tag('admin_icons/up.gif', :alt => 'Hide') + 'Close Form',
+                       {:url => '/admin/pages/hide_form'},
+                        :id => 'hide_page_form_button', :style => 'display:none', :class => 'button' %>
+</div>
+<table class="admin_table">
+  <tr>
+    <th>&nbsp;</th>
+    <th><%= sort_link 'Title', :title %></th>
+    <th><%= sort_link 'URL Tag', :url_tag %></th>
+    <th><%= sort_link 'Last Modified', :updated_at %></th>
+    <th>History</th>
+  </tr>
+
+<% @pages.each do |page| %>
+  <tr class="admin_table_row <%= cycle('odd', 'even') %>_row" id="page_<%= page.id %>">
+    <td><%= link_to_remote image_tag('admin_icons/edit.png'),
+                             {:url => show_form_admin_page_path(page)},
+                             :href => url_for(edit_admin_page_path(page)) %>        
+        <%= link_to image_tag('admin_icons/delete.png', :alt => 'Destroy', :class => 'destroy'),
+                    [:admin, page], :confirm => 'Are you sure?', :method => :delete, :id => "destroy_#{page.id}" %></td>
+    <td><%= page.title %></td>
+    <td><%= page.url_tag %></td>
+    <td><%= page.updated_at.strftime("%d-%B-%Y %I:%M%p") %></td>
+    <td><%= link_to image_tag('admin_icons/revert.png'), admin_page_path(page) %> (<%= page.versions.count %>)</td>
+  </tr>
+<% end %>
+</table>
+<br />
+<%= will_paginate @pages %>
+</div>

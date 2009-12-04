@@ -1,0 +1,41 @@
+<% form_for([:admin, @page]) do |f| %>  
+  <%= f.error_messages %>
+  <p>
+    <%= f.label :title %><br />
+    <%= f.text_field :title %>
+  </p>
+
+    <p>
+      <%= f.label :html_title %><br />
+      <%= f.text_field :html_title %>
+    </p>
+
+    <p>
+      <%= f.label :keywords %><br />
+      <%= f.text_field :keywords %>
+    </p>
+
+    <p>
+      <%= f.label :description %><br />
+      <%= f.text_field :description %>
+    </p>
+
+    <p>
+      <%= f.label :url_tag %><br />
+      <%= f.text_field :url_tag %>
+    </p>
+
+    <p>
+      <%= f.label :content %><br />
+      <%= fckeditor_textarea(:page, :content, :toolbarSet => 'Simple', :width => '90%', :height => '500px')%>
+    </p>
+
+    <p>
+      <%= f.label :published %><br />
+      <%=  f.check_box :published %>
+    </p>
+
+    <p><%= f.submit 'Save' %></p>
+    
+<% end %>
+

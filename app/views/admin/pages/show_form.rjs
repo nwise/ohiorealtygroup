@@ -1,0 +1,4 @@
+page.hide 'new_page_button'
+page.replace_html 'new_page', :partial => 'form'
+page['new_page'].visual_effect :blind_down
+page.show 'hide_page_form_button'

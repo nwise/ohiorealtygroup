@@ -1,0 +1,9 @@
+<h2>Page Version: <%= @page_version.version %><%# debugger %>
+    <%= link_to( image_tag('admin_icons/show.png'), admin_page_path(@page_version.page)) %></h2>
+<strong>Title:</strong> <%= @page_version.title %><br />
+<strong>Keywords:</strong> <%= @page_version.keywords %><br />
+<strong>Description:</strong> <%= @page_version.description %><br />
+<strong>URL:</strong> <%= @page_version.url_tag %><br />
+<strong>Content:</strong><br /><%= @page_version.content %>
+
+<%= link_to "Make this live", restore_admin_page_version_path(@page_version) %>

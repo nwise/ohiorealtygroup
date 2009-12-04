@@ -1,0 +1,21 @@
+<h1>Menu Items</h1>
+
+<% @menu_items.each do |m| -%>
+  <ul>
+  <li><%= "#{m.label.titleize}" %>
+      <%= link_to(image_tag('admin_icons/add.png'), 
+                  new_admin_menu_item_path(:parent_id => m.id),
+                  :id => "#{m.id}_add_child") %>
+      <%= link_to(image_tag('admin_icons/edit.png'),
+                  edit_admin_menu_item_path(m)) %>
+      <%= link_to(image_tag('admin_icons/delete.png'), admin_menu_item_path(m),
+                                                      :confirm => 'Are you sure?',
+                                                      :method => :delete) %>
+    <ul>
+      <%= draw_menu_tree(m) %>
+    </ul>
+    </li>
+  </ul>
+<% end -%>
+
+<%= link_to 'New Menu Item', new_admin_menu_item_path %>
