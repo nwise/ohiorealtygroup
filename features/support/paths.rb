@@ -18,6 +18,8 @@ module NavigationHelpers
     #     user_profile_path(User.find_by_login($1))
     when /the admin list of pages/
       'admin/pages'
+    when /the admin list of realtors/
+      'admin/realtors'
     when /the admin list of MenuItems/
       'admin/menu_items'
     when /^the contact us form$/

@@ -1,11 +1,10 @@
-<h1>Listing realtors</h1>
-
-<table>
+<table class="admin_table">
   <tr>
+    <td></td>
   </tr>
 
 <% @realtors.each do |realtor| %>
-  <tr>
+  <tr class="admin_table_row <%= cycle('odd', 'even') %>_row" id="realtor_<%= realtor.id %>">
     <td><%= link_to 'Show', realtor %></td>
     <td><%= link_to 'Edit', edit_realtor_path(realtor) %></td>
     <td><%= link_to 'Destroy', realtor, :confirm => 'Are you sure?', :method => :delete %></td>
@@ -16,3 +15,4 @@
 <br />
 
 <%= link_to 'New realtor', new_realtor_path %>
+<%= will_paginate @realtors %>

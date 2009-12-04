@@ -1,19 +1,19 @@
 class Admin::RealtorsController < ApplicationController
-  # GET /admin_realtors
-  # GET /admin_realtors.xml
+  # GET /realtors
+  # GET /realtors.xml
   def index
-    @admin_realtors = Admin::Realtor.all
+    @realtors = Realtor.all.paginate :page => params[:page], :per_page => 10, :order => 'name ASC'
 
     respond_to do |format|
       format.html # index.html.erb
-      format.xml  { render :xml => @admin_realtors }
+      format.xml  { render :xml => @realtors }
     end
   end
 
-  # GET /admin_realtors/1
-  # GET /admin_realtors/1.xml
+  # GET /realtors/1
+  # GET /realtors/1.xml
   def show
-    @realtor = Admin::Realtor.find(params[:id])
+    @realtor = Realtor.find(params[:id])
 
     respond_to do |format|
       format.html # show.html.erb
@@ -21,10 +21,10 @@ class Admin::RealtorsController < ApplicationController
     end
   end
 
-  # GET /admin_realtors/new
-  # GET /admin_realtors/new.xml
+  # GET /realtors/new
+  # GET /realtors/new.xml
   def new
-    @realtor = Admin::Realtor.new
+    @realtor = Realtor.new
 
     respond_to do |format|
       format.html # new.html.erb
@@ -32,19 +32,19 @@ class Admin::RealtorsController < ApplicationController
     end
   end
 
-  # GET /admin_realtors/1/edit
+  # GET /realtors/1/edit
   def edit
-    @realtor = Admin::Realtor.find(params[:id])
+    @realtor = Realtor.find(params[:id])
   end
 
-  # POST /admin_realtors
-  # POST /admin_realtors.xml
+  # POST /realtors
+  # POST /realtors.xml
   def create
-    @realtor = Admin::Realtor.new(params[:realtor])
+    @realtor = Realtor.new(params[:realtor])
 
     respond_to do |format|
       if @realtor.save
-        flash[:notice] = 'Admin::Realtor was successfully created.'
+        flash[:notice] = 'Realtor was successfully created.'
         format.html { redirect_to(@realtor) }
         format.xml  { render :xml => @realtor, :status => :created, :location => @realtor }
       else
@@ -54,14 +54,14 @@ class Admin::RealtorsController < ApplicationController
     end
   end
 
-  # PUT /admin_realtors/1
-  # PUT /admin_realtors/1.xml
+  # PUT /realtors/1
+  # PUT /realtors/1.xml
   def update
-    @realtor = Admin::Realtor.find(params[:id])
+    @realtor = Realtor.find(params[:id])
 
     respond_to do |format|
       if @realtor.update_attributes(params[:realtor])
-        flash[:notice] = 'Admin::Realtor was successfully updated.'
+        flash[:notice] = 'Realtor was successfully updated.'
         format.html { redirect_to(@realtor) }
         format.xml  { head :ok }
       else
@@ -71,14 +71,14 @@ class Admin::RealtorsController < ApplicationController
     end
   end
 
-  # DELETE /admin_realtors/1
-  # DELETE /admin_realtors/1.xml
+  # DELETE /realtors/1
+  # DELETE /realtors/1.xml
   def destroy
-    @realtor = Admin::Realtor.find(params[:id])
+    @realtor = Realtor.find(params[:id])
     @realtor.destroy
 
     respond_to do |format|
-      format.html { redirect_to(admin_realtors_url) }
+      format.html { redirect_to(realtors_url) }
       format.xml  { head :ok }
     end
   end

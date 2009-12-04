@@ -9,7 +9,7 @@
 #
 # It's strongly recommended to check this file into your version control system.
 
-ActiveRecord::Schema.define(:version => 20090831192618) do
+ActiveRecord::Schema.define(:version => 20091204021450) do
 
   create_table "four_oh_fours", :force => true do |t|
     t.string   "host"
@@ -60,6 +60,19 @@ ActiveRecord::Schema.define(:version => 20090831192618) do
   end
 
   add_index "pages", ["url_tag"], :name => "index_pages_on_url_tag"
+
+  create_table "realtors", :force => true do |t|
+    t.string   "name"
+    t.string   "phone_number"
+    t.string   "cell_number"
+    t.string   "voicemail_number"
+    t.string   "email"
+    t.string   "website"
+    t.string   "bio_link"
+    t.string   "url_tag"
+    t.datetime "created_at"
+    t.datetime "updated_at"
+  end
 
   create_table "rights", :force => true do |t|
     t.string   "name"

@@ -39,3 +39,7 @@ Given /^I am logged in as "(.*)"$/ do |username|
 
   response.body.should =~ /logged/m
 end
+
+When /^dump the page$/ do
+  save_and_open_page
+end

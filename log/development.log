@@ -5325,3 +5325,546 @@ Rendering main/content_page
   [4;35;1mPage Load (0.2ms)[0m   [0mSELECT * FROM `pages` WHERE (`pages`.`id` = 9)[0m
 Rendered shared/_menu_vertical (38.6ms)
 Completed in 403ms (View: 72, DB: 8) | 200 OK [http://localhost/buying-tips]
+  [4;36;1mSQL (0.1ms)[0m   [0;1mSET NAMES 'utf8'[0m
+  [4;35;1mSQL (0.1ms)[0m   [0mSET SQL_AUTO_IS_NULL=0[0m
+  [4;36;1mSQL (0.3ms)[0m   [0;1mSHOW TABLES[0m
+  [4;35;1mSQL (105.8ms)[0m   [0mSELECT version FROM schema_migrations[0m
+Migrating to CreatePages (20090319191513)
+Migrating to CreateFourOhFours (20090502094200)
+Migrating to CreateMenuItems (20090502094230)
+Migrating to CreateUsers (20090807122123)
+Migrating to CreateUserSessions (20090807141414)
+Migrating to CreateRoles (20090831192450)
+Migrating to CreateRights (20090831192510)
+Migrating to CreateRolesUsers (20090831192548)
+Migrating to CreateRightsRoles (20090831192618)
+Migrating to CreateAdminFiles (20091027012538)
+  [4;36;1mSQL (334.7ms)[0m   [0;1mCREATE TABLE `admin_files` (`id` int(11) DEFAULT NULL auto_increment PRIMARY KEY, `created_at` datetime, `updated_at` datetime) ENGINE=InnoDB[0m
+  [4;35;1mSQL (43.0ms)[0m   [0mINSERT INTO schema_migrations (version) VALUES ('20091027012538')[0m
+Migrating to CreateRealtors (20091204021450)
+  [4;36;1mSQL (184.6ms)[0m   [0;1mCREATE TABLE `realtors` (`id` int(11) DEFAULT NULL auto_increment PRIMARY KEY, `name` varchar(255), `phone_number` varchar(255), `cell_number` varchar(255), `voicemail_number` varchar(255), `email` varchar(255), `website` varchar(255), `bio_link` varchar(255), `created_at` datetime, `updated_at` datetime) ENGINE=InnoDB[0m
+  [4;35;1mSQL (57.3ms)[0m   [0mINSERT INTO schema_migrations (version) VALUES ('20091204021450')[0m
+  [4;36;1mSQL (0.5ms)[0m   [0;1mSHOW TABLES[0m
+  [4;35;1mSQL (0.2ms)[0m   [0mSELECT version FROM schema_migrations[0m
+  [4;36;1mSQL (0.2ms)[0m   [0;1mSHOW TABLES[0m
+  [4;35;1mSQL (100.4ms)[0m   [0mSHOW FIELDS FROM `admin_files`[0m
+  [4;36;1mSQL (15.0ms)[0m   [0;1mdescribe `admin_files`[0m
+  [4;35;1mSQL (5.1ms)[0m   [0mSHOW KEYS FROM `admin_files`[0m
+  [4;36;1mSQL (0.8ms)[0m   [0;1mSHOW FIELDS FROM `four_oh_fours`[0m
+  [4;35;1mSQL (0.8ms)[0m   [0mdescribe `four_oh_fours`[0m
+  [4;36;1mSQL (34.9ms)[0m   [0;1mSHOW KEYS FROM `four_oh_fours`[0m
+  [4;35;1mSQL (9.5ms)[0m   [0mSHOW FIELDS FROM `menu_items`[0m
+  [4;36;1mSQL (0.8ms)[0m   [0;1mdescribe `menu_items`[0m
+  [4;35;1mSQL (0.3ms)[0m   [0mSHOW KEYS FROM `menu_items`[0m
+  [4;36;1mSQL (48.1ms)[0m   [0;1mSHOW FIELDS FROM `page_versions`[0m
+  [4;35;1mSQL (1.1ms)[0m   [0mdescribe `page_versions`[0m
+  [4;36;1mSQL (1.1ms)[0m   [0;1mSHOW KEYS FROM `page_versions`[0m
+  [4;35;1mSQL (19.6ms)[0m   [0mSHOW FIELDS FROM `pages`[0m
+  [4;36;1mSQL (1.0ms)[0m   [0;1mdescribe `pages`[0m
+  [4;35;1mSQL (4.5ms)[0m   [0mSHOW KEYS FROM `pages`[0m
+  [4;36;1mSQL (19.7ms)[0m   [0;1mSHOW FIELDS FROM `realtors`[0m
+  [4;35;1mSQL (0.9ms)[0m   [0mdescribe `realtors`[0m
+  [4;36;1mSQL (0.3ms)[0m   [0;1mSHOW KEYS FROM `realtors`[0m
+  [4;35;1mSQL (0.7ms)[0m   [0mSHOW FIELDS FROM `rights`[0m
+  [4;36;1mSQL (0.7ms)[0m   [0;1mdescribe `rights`[0m
+  [4;35;1mSQL (41.0ms)[0m   [0mSHOW KEYS FROM `rights`[0m
+  [4;36;1mSQL (0.8ms)[0m   [0;1mSHOW FIELDS FROM `rights_roles`[0m
+  [4;35;1mSQL (0.6ms)[0m   [0mdescribe `rights_roles`[0m
+  [4;36;1mSQL (12.6ms)[0m   [0;1mSHOW KEYS FROM `rights_roles`[0m
+  [4;35;1mSQL (0.7ms)[0m   [0mSHOW FIELDS FROM `roles`[0m
+  [4;36;1mSQL (0.6ms)[0m   [0;1mdescribe `roles`[0m
+  [4;35;1mSQL (0.3ms)[0m   [0mSHOW KEYS FROM `roles`[0m
+  [4;36;1mSQL (0.7ms)[0m   [0;1mSHOW FIELDS FROM `roles_users`[0m
+  [4;35;1mSQL (0.6ms)[0m   [0mdescribe `roles_users`[0m
+  [4;36;1mSQL (0.3ms)[0m   [0;1mSHOW KEYS FROM `roles_users`[0m
+  [4;35;1mSQL (0.7ms)[0m   [0mSHOW FIELDS FROM `user_sessions`[0m
+  [4;36;1mSQL (0.7ms)[0m   [0;1mdescribe `user_sessions`[0m
+  [4;35;1mSQL (16.5ms)[0m   [0mSHOW KEYS FROM `user_sessions`[0m
+  [4;36;1mSQL (17.0ms)[0m   [0;1mSHOW FIELDS FROM `users`[0m
+  [4;35;1mSQL (1.1ms)[0m   [0mdescribe `users`[0m
+  [4;36;1mSQL (0.5ms)[0m   [0;1mSHOW KEYS FROM `users`[0m
+  [4;36;1mSQL (0.1ms)[0m   [0;1mSET NAMES 'utf8'[0m
+  [4;35;1mSQL (0.1ms)[0m   [0mSET SQL_AUTO_IS_NULL=0[0m
+  [4;36;1mSQL (0.3ms)[0m   [0;1mSHOW TABLES[0m
+  [4;35;1mSQL (0.1ms)[0m   [0mSELECT version FROM schema_migrations[0m
+  [4;36;1mSQL (0.2ms)[0m   [0;1mSHOW TABLES[0m
+  [4;35;1mSQL (0.1ms)[0m   [0mSELECT version FROM schema_migrations[0m
+Migrating to CreateRealtors (20091204021450)
+  [4;36;1mSQL (231.5ms)[0m   [0;1mDROP TABLE `realtors`[0m
+  [4;35;1mSQL (69.8ms)[0m   [0mDELETE FROM schema_migrations WHERE version = '20091204021450'[0m
+  [4;36;1mSQL (0.4ms)[0m   [0;1mSHOW TABLES[0m
+  [4;35;1mSQL (0.2ms)[0m   [0mSELECT version FROM schema_migrations[0m
+  [4;36;1mSQL (0.2ms)[0m   [0;1mSHOW TABLES[0m
+  [4;35;1mSQL (0.5ms)[0m   [0mSHOW FIELDS FROM `admin_files`[0m
+  [4;36;1mSQL (0.4ms)[0m   [0;1mdescribe `admin_files`[0m
+  [4;35;1mSQL (0.2ms)[0m   [0mSHOW KEYS FROM `admin_files`[0m
+  [4;36;1mSQL (0.5ms)[0m   [0;1mSHOW FIELDS FROM `four_oh_fours`[0m
+  [4;35;1mSQL (0.5ms)[0m   [0mdescribe `four_oh_fours`[0m
+  [4;36;1mSQL (0.3ms)[0m   [0;1mSHOW KEYS FROM `four_oh_fours`[0m
+  [4;35;1mSQL (0.6ms)[0m   [0mSHOW FIELDS FROM `menu_items`[0m
+  [4;36;1mSQL (0.5ms)[0m   [0;1mdescribe `menu_items`[0m
+  [4;35;1mSQL (0.2ms)[0m   [0mSHOW KEYS FROM `menu_items`[0m
+  [4;36;1mSQL (0.6ms)[0m   [0;1mSHOW FIELDS FROM `page_versions`[0m
+  [4;35;1mSQL (0.6ms)[0m   [0mdescribe `page_versions`[0m
+  [4;36;1mSQL (0.2ms)[0m   [0;1mSHOW KEYS FROM `page_versions`[0m
+  [4;35;1mSQL (0.6ms)[0m   [0mSHOW FIELDS FROM `pages`[0m
+  [4;36;1mSQL (0.6ms)[0m   [0;1mdescribe `pages`[0m
+  [4;35;1mSQL (0.3ms)[0m   [0mSHOW KEYS FROM `pages`[0m
+  [4;36;1mSQL (0.5ms)[0m   [0;1mSHOW FIELDS FROM `rights`[0m
+  [4;35;1mSQL (0.5ms)[0m   [0mdescribe `rights`[0m
+  [4;36;1mSQL (0.2ms)[0m   [0;1mSHOW KEYS FROM `rights`[0m
+  [4;35;1mSQL (0.4ms)[0m   [0mSHOW FIELDS FROM `rights_roles`[0m
+  [4;36;1mSQL (0.4ms)[0m   [0;1mdescribe `rights_roles`[0m
+  [4;35;1mSQL (0.2ms)[0m   [0mSHOW KEYS FROM `rights_roles`[0m
+  [4;36;1mSQL (0.4ms)[0m   [0;1mSHOW FIELDS FROM `roles`[0m
+  [4;35;1mSQL (0.4ms)[0m   [0mdescribe `roles`[0m
+  [4;36;1mSQL (0.3ms)[0m   [0;1mSHOW KEYS FROM `roles`[0m
+  [4;35;1mSQL (0.5ms)[0m   [0mSHOW FIELDS FROM `roles_users`[0m
+  [4;36;1mSQL (0.4ms)[0m   [0;1mdescribe `roles_users`[0m
+  [4;35;1mSQL (0.2ms)[0m   [0mSHOW KEYS FROM `roles_users`[0m
+  [4;36;1mSQL (0.5ms)[0m   [0;1mSHOW FIELDS FROM `user_sessions`[0m
+  [4;35;1mSQL (0.4ms)[0m   [0mdescribe `user_sessions`[0m
+  [4;36;1mSQL (0.2ms)[0m   [0;1mSHOW KEYS FROM `user_sessions`[0m
+  [4;35;1mSQL (0.8ms)[0m   [0mSHOW FIELDS FROM `users`[0m
+  [4;36;1mSQL (1.1ms)[0m   [0;1mdescribe `users`[0m
+  [4;35;1mSQL (0.3ms)[0m   [0mSHOW KEYS FROM `users`[0m
+  [4;36;1mSQL (0.1ms)[0m   [0;1mSET NAMES 'utf8'[0m
+  [4;35;1mSQL (0.1ms)[0m   [0mSET SQL_AUTO_IS_NULL=0[0m
+  [4;36;1mSQL (0.3ms)[0m   [0;1mSHOW TABLES[0m
+  [4;35;1mSQL (0.1ms)[0m   [0mSELECT version FROM schema_migrations[0m
+  [4;36;1mSQL (0.2ms)[0m   [0;1mSHOW TABLES[0m
+  [4;35;1mSQL (0.1ms)[0m   [0mSELECT version FROM schema_migrations[0m
+Migrating to CreateAdminFiles (20091027012538)
+  [4;36;1mSQL (39.2ms)[0m   [0;1mDROP TABLE `admin_files`[0m
+  [4;35;1mSQL (57.8ms)[0m   [0mDELETE FROM schema_migrations WHERE version = '20091027012538'[0m
+  [4;36;1mSQL (0.4ms)[0m   [0;1mSHOW TABLES[0m
+  [4;35;1mSQL (0.2ms)[0m   [0mSELECT version FROM schema_migrations[0m
+  [4;36;1mSQL (0.2ms)[0m   [0;1mSHOW TABLES[0m
+  [4;35;1mSQL (0.6ms)[0m   [0mSHOW FIELDS FROM `four_oh_fours`[0m
+  [4;36;1mSQL (0.5ms)[0m   [0;1mdescribe `four_oh_fours`[0m
+  [4;35;1mSQL (0.3ms)[0m   [0mSHOW KEYS FROM `four_oh_fours`[0m
+  [4;36;1mSQL (0.6ms)[0m   [0;1mSHOW FIELDS FROM `menu_items`[0m
+  [4;35;1mSQL (0.5ms)[0m   [0mdescribe `menu_items`[0m
+  [4;36;1mSQL (0.2ms)[0m   [0;1mSHOW KEYS FROM `menu_items`[0m
+  [4;35;1mSQL (0.6ms)[0m   [0mSHOW FIELDS FROM `page_versions`[0m
+  [4;36;1mSQL (0.6ms)[0m   [0;1mdescribe `page_versions`[0m
+  [4;35;1mSQL (0.2ms)[0m   [0mSHOW KEYS FROM `page_versions`[0m
+  [4;36;1mSQL (0.6ms)[0m   [0;1mSHOW FIELDS FROM `pages`[0m
+  [4;35;1mSQL (0.6ms)[0m   [0mdescribe `pages`[0m
+  [4;36;1mSQL (0.3ms)[0m   [0;1mSHOW KEYS FROM `pages`[0m
+  [4;35;1mSQL (0.5ms)[0m   [0mSHOW FIELDS FROM `rights`[0m
+  [4;36;1mSQL (0.5ms)[0m   [0;1mdescribe `rights`[0m
+  [4;35;1mSQL (0.2ms)[0m   [0mSHOW KEYS FROM `rights`[0m
+  [4;36;1mSQL (0.5ms)[0m   [0;1mSHOW FIELDS FROM `rights_roles`[0m
+  [4;35;1mSQL (0.4ms)[0m   [0mdescribe `rights_roles`[0m
+  [4;36;1mSQL (0.2ms)[0m   [0;1mSHOW KEYS FROM `rights_roles`[0m
+  [4;35;1mSQL (0.4ms)[0m   [0mSHOW FIELDS FROM `roles`[0m
+  [4;36;1mSQL (0.5ms)[0m   [0;1mdescribe `roles`[0m
+  [4;35;1mSQL (0.2ms)[0m   [0mSHOW KEYS FROM `roles`[0m
+  [4;36;1mSQL (0.4ms)[0m   [0;1mSHOW FIELDS FROM `roles_users`[0m
+  [4;35;1mSQL (0.5ms)[0m   [0mdescribe `roles_users`[0m
+  [4;36;1mSQL (0.2ms)[0m   [0;1mSHOW KEYS FROM `roles_users`[0m
+  [4;35;1mSQL (0.5ms)[0m   [0mSHOW FIELDS FROM `user_sessions`[0m
+  [4;36;1mSQL (0.4ms)[0m   [0;1mdescribe `user_sessions`[0m
+  [4;35;1mSQL (0.2ms)[0m   [0mSHOW KEYS FROM `user_sessions`[0m
+  [4;36;1mSQL (0.7ms)[0m   [0;1mSHOW FIELDS FROM `users`[0m
+  [4;35;1mSQL (0.8ms)[0m   [0mdescribe `users`[0m
+  [4;36;1mSQL (0.3ms)[0m   [0;1mSHOW KEYS FROM `users`[0m
+  [4;36;1mSQL (0.1ms)[0m   [0;1mSET NAMES 'utf8'[0m
+  [4;35;1mSQL (0.1ms)[0m   [0mSET SQL_AUTO_IS_NULL=0[0m
+  [4;36;1mSQL (0.3ms)[0m   [0;1mSHOW TABLES[0m
+  [4;35;1mSQL (0.1ms)[0m   [0mSELECT version FROM schema_migrations[0m
+Migrating to CreatePages (20090319191513)
+Migrating to CreateFourOhFours (20090502094200)
+Migrating to CreateMenuItems (20090502094230)
+Migrating to CreateUsers (20090807122123)
+Migrating to CreateUserSessions (20090807141414)
+Migrating to CreateRoles (20090831192450)
+Migrating to CreateRights (20090831192510)
+Migrating to CreateRolesUsers (20090831192548)
+Migrating to CreateRightsRoles (20090831192618)
+Migrating to CreateRealtors (20091204021450)
+  [4;36;1mSQL (125.9ms)[0m   [0;1mCREATE TABLE `realtors` (`id` int(11) DEFAULT NULL auto_increment PRIMARY KEY, `name` varchar(255), `phone_number` varchar(255), `cell_number` varchar(255), `voicemail_number` varchar(255), `email` varchar(255), `website` varchar(255), `bio_link` varchar(255), `created_at` datetime, `updated_at` datetime) ENGINE=InnoDB[0m
+  [4;35;1mSQL (57.1ms)[0m   [0mINSERT INTO schema_migrations (version) VALUES ('20091204021450')[0m
+  [4;36;1mSQL (0.4ms)[0m   [0;1mSHOW TABLES[0m
+  [4;35;1mSQL (0.2ms)[0m   [0mSELECT version FROM schema_migrations[0m
+  [4;36;1mSQL (0.2ms)[0m   [0;1mSHOW TABLES[0m
+  [4;35;1mSQL (0.6ms)[0m   [0mSHOW FIELDS FROM `four_oh_fours`[0m
+  [4;36;1mSQL (0.5ms)[0m   [0;1mdescribe `four_oh_fours`[0m
+  [4;35;1mSQL (0.3ms)[0m   [0mSHOW KEYS FROM `four_oh_fours`[0m
+  [4;36;1mSQL (0.6ms)[0m   [0;1mSHOW FIELDS FROM `menu_items`[0m
+  [4;35;1mSQL (0.5ms)[0m   [0mdescribe `menu_items`[0m
+  [4;36;1mSQL (0.2ms)[0m   [0;1mSHOW KEYS FROM `menu_items`[0m
+  [4;35;1mSQL (0.6ms)[0m   [0mSHOW FIELDS FROM `page_versions`[0m
+  [4;36;1mSQL (0.6ms)[0m   [0;1mdescribe `page_versions`[0m
+  [4;35;1mSQL (0.2ms)[0m   [0mSHOW KEYS FROM `page_versions`[0m
+  [4;36;1mSQL (0.6ms)[0m   [0;1mSHOW FIELDS FROM `pages`[0m
+  [4;35;1mSQL (0.6ms)[0m   [0mdescribe `pages`[0m
+  [4;36;1mSQL (0.6ms)[0m   [0;1mSHOW KEYS FROM `pages`[0m
+  [4;35;1mSQL (0.8ms)[0m   [0mSHOW FIELDS FROM `realtors`[0m
+  [4;36;1mSQL (0.6ms)[0m   [0;1mdescribe `realtors`[0m
+  [4;35;1mSQL (0.2ms)[0m   [0mSHOW KEYS FROM `realtors`[0m
+  [4;36;1mSQL (0.5ms)[0m   [0;1mSHOW FIELDS FROM `rights`[0m
+  [4;35;1mSQL (0.5ms)[0m   [0mdescribe `rights`[0m
+  [4;36;1mSQL (0.2ms)[0m   [0;1mSHOW KEYS FROM `rights`[0m
+  [4;35;1mSQL (0.4ms)[0m   [0mSHOW FIELDS FROM `rights_roles`[0m
+  [4;36;1mSQL (0.4ms)[0m   [0;1mdescribe `rights_roles`[0m
+  [4;35;1mSQL (0.2ms)[0m   [0mSHOW KEYS FROM `rights_roles`[0m
+  [4;36;1mSQL (0.4ms)[0m   [0;1mSHOW FIELDS FROM `roles`[0m
+  [4;35;1mSQL (0.4ms)[0m   [0mdescribe `roles`[0m
+  [4;36;1mSQL (0.2ms)[0m   [0;1mSHOW KEYS FROM `roles`[0m
+  [4;35;1mSQL (0.4ms)[0m   [0mSHOW FIELDS FROM `roles_users`[0m
+  [4;36;1mSQL (0.4ms)[0m   [0;1mdescribe `roles_users`[0m
+  [4;35;1mSQL (0.2ms)[0m   [0mSHOW KEYS FROM `roles_users`[0m
+  [4;36;1mSQL (0.5ms)[0m   [0;1mSHOW FIELDS FROM `user_sessions`[0m
+  [4;35;1mSQL (0.4ms)[0m   [0mdescribe `user_sessions`[0m
+  [4;36;1mSQL (0.2ms)[0m   [0;1mSHOW KEYS FROM `user_sessions`[0m
+  [4;35;1mSQL (0.8ms)[0m   [0mSHOW FIELDS FROM `users`[0m
+  [4;36;1mSQL (0.7ms)[0m   [0;1mdescribe `users`[0m
+  [4;35;1mSQL (0.2ms)[0m   [0mSHOW KEYS FROM `users`[0m
+  [4;36;1mSQL (0.1ms)[0m   [0;1mSET NAMES 'utf8'[0m
+  [4;35;1mSQL (0.1ms)[0m   [0mSET SQL_AUTO_IS_NULL=0[0m
+  [4;36;1mSQL (0.4ms)[0m   [0;1mSHOW TABLES[0m
+  [4;35;1mSQL (0.1ms)[0m   [0mSELECT version FROM schema_migrations[0m
+  [4;36;1mSQL (0.2ms)[0m   [0;1mSHOW TABLES[0m
+  [4;35;1mSQL (0.6ms)[0m   [0mSHOW FIELDS FROM `four_oh_fours`[0m
+  [4;36;1mSQL (0.5ms)[0m   [0;1mdescribe `four_oh_fours`[0m
+  [4;35;1mSQL (0.3ms)[0m   [0mSHOW KEYS FROM `four_oh_fours`[0m
+  [4;36;1mSQL (0.6ms)[0m   [0;1mSHOW FIELDS FROM `menu_items`[0m
+  [4;35;1mSQL (0.5ms)[0m   [0mdescribe `menu_items`[0m
+  [4;36;1mSQL (0.2ms)[0m   [0;1mSHOW KEYS FROM `menu_items`[0m
+  [4;35;1mSQL (0.6ms)[0m   [0mSHOW FIELDS FROM `page_versions`[0m
+  [4;36;1mSQL (0.6ms)[0m   [0;1mdescribe `page_versions`[0m
+  [4;35;1mSQL (0.2ms)[0m   [0mSHOW KEYS FROM `page_versions`[0m
+  [4;36;1mSQL (0.6ms)[0m   [0;1mSHOW FIELDS FROM `pages`[0m
+  [4;35;1mSQL (0.6ms)[0m   [0mdescribe `pages`[0m
+  [4;36;1mSQL (0.3ms)[0m   [0;1mSHOW KEYS FROM `pages`[0m
+  [4;35;1mSQL (0.6ms)[0m   [0mSHOW FIELDS FROM `realtors`[0m
+  [4;36;1mSQL (0.6ms)[0m   [0;1mdescribe `realtors`[0m
+  [4;35;1mSQL (0.3ms)[0m   [0mSHOW KEYS FROM `realtors`[0m
+  [4;36;1mSQL (0.5ms)[0m   [0;1mSHOW FIELDS FROM `rights`[0m
+  [4;35;1mSQL (0.5ms)[0m   [0mdescribe `rights`[0m
+  [4;36;1mSQL (0.2ms)[0m   [0;1mSHOW KEYS FROM `rights`[0m
+  [4;35;1mSQL (0.4ms)[0m   [0mSHOW FIELDS FROM `rights_roles`[0m
+  [4;36;1mSQL (0.4ms)[0m   [0;1mdescribe `rights_roles`[0m
+  [4;35;1mSQL (0.2ms)[0m   [0mSHOW KEYS FROM `rights_roles`[0m
+  [4;36;1mSQL (0.5ms)[0m   [0;1mSHOW FIELDS FROM `roles`[0m
+  [4;35;1mSQL (0.4ms)[0m   [0mdescribe `roles`[0m
+  [4;36;1mSQL (0.2ms)[0m   [0;1mSHOW KEYS FROM `roles`[0m
+  [4;35;1mSQL (0.4ms)[0m   [0mSHOW FIELDS FROM `roles_users`[0m
+  [4;36;1mSQL (0.4ms)[0m   [0;1mdescribe `roles_users`[0m
+  [4;35;1mSQL (0.2ms)[0m   [0mSHOW KEYS FROM `roles_users`[0m
+  [4;36;1mSQL (0.5ms)[0m   [0;1mSHOW FIELDS FROM `user_sessions`[0m
+  [4;35;1mSQL (0.5ms)[0m   [0mdescribe `user_sessions`[0m
+  [4;36;1mSQL (0.2ms)[0m   [0;1mSHOW KEYS FROM `user_sessions`[0m
+  [4;35;1mSQL (0.8ms)[0m   [0mSHOW FIELDS FROM `users`[0m
+  [4;36;1mSQL (0.7ms)[0m   [0;1mdescribe `users`[0m
+  [4;35;1mSQL (0.3ms)[0m   [0mSHOW KEYS FROM `users`[0m
+  [4;36;1mSQL (0.1ms)[0m   [0;1mSET NAMES 'utf8'[0m
+  [4;35;1mSQL (0.1ms)[0m   [0mSET SQL_AUTO_IS_NULL=0[0m
+  [4;36;1mSQL (930.4ms)[0m   [0;1mDROP DATABASE IF EXISTS `ohiorealtygroup_test`[0m
+  [4;35;1mSQL (105.1ms)[0m   [0mCREATE DATABASE `ohiorealtygroup_test` DEFAULT CHARACTER SET `utf8`[0m
+  [4;36;1mSQL (0.1ms)[0m   [0;1mSET NAMES 'utf8'[0m
+  [4;35;1mSQL (0.1ms)[0m   [0mSET SQL_AUTO_IS_NULL=0[0m
+  [4;36;1mSQL (0.3ms)[0m   [0;1mSHOW TABLES[0m
+  [4;35;1mSQL (116.2ms)[0m   [0mCREATE TABLE `four_oh_fours` (`id` int(11) DEFAULT NULL auto_increment PRIMARY KEY, `host` varchar(255), `path` varchar(255), `referer` varchar(255), `count` int(11) DEFAULT 0, `created_at` datetime, `updated_at` datetime) ENGINE=InnoDB[0m
+  [4;36;1mSQL (262.6ms)[0m   [0;1mCREATE UNIQUE INDEX `index_four_oh_fours_on_host_and_path_and_referer` ON `four_oh_fours` (`host`, `path`, `referer`)[0m
+  [4;35;1mSQL (249.9ms)[0m   [0mCREATE INDEX `index_four_oh_fours_on_path` ON `four_oh_fours` (`path`)[0m
+  [4;36;1mSQL (0.5ms)[0m   [0;1mSHOW TABLES[0m
+  [4;35;1mSQL (127.4ms)[0m   [0mCREATE TABLE `menu_items` (`id` int(11) DEFAULT NULL auto_increment PRIMARY KEY, `position` int(11), `parent_id` int(11), `label` varchar(255), `page_id` varchar(255), `url` varchar(255), `created_at` datetime, `updated_at` datetime) ENGINE=InnoDB[0m
+  [4;36;1mSQL (0.6ms)[0m   [0;1mSHOW TABLES[0m
+  [4;35;1mSQL (141.8ms)[0m   [0mCREATE TABLE `page_versions` (`id` int(11) DEFAULT NULL auto_increment PRIMARY KEY, `page_id` int(11), `version` int(11), `url_tag` varchar(255), `title` varchar(255), `html_title` varchar(255), `keywords` varchar(255), `description` varchar(255), `content` text, `published` tinyint(1), `updated_at` datetime) ENGINE=InnoDB[0m
+  [4;36;1mSQL (0.5ms)[0m   [0;1mSHOW TABLES[0m
+  [4;35;1mSQL (98.7ms)[0m   [0mCREATE TABLE `pages` (`id` int(11) DEFAULT NULL auto_increment PRIMARY KEY, `url_tag` varchar(255), `title` varchar(255), `html_title` varchar(255), `keywords` varchar(255), `description` varchar(255), `content` text, `published` tinyint(1), `created_at` datetime, `updated_at` datetime, `version` int(11)) ENGINE=InnoDB[0m
+  [4;36;1mSQL (233.9ms)[0m   [0;1mCREATE INDEX `index_pages_on_url_tag` ON `pages` (`url_tag`)[0m
+  [4;35;1mSQL (0.6ms)[0m   [0mSHOW TABLES[0m
+  [4;36;1mSQL (85.5ms)[0m   [0;1mCREATE TABLE `realtors` (`id` int(11) DEFAULT NULL auto_increment PRIMARY KEY, `name` varchar(255), `phone_number` varchar(255), `cell_number` varchar(255), `voicemail_number` varchar(255), `email` varchar(255), `website` varchar(255), `bio_link` varchar(255), `created_at` datetime, `updated_at` datetime) ENGINE=InnoDB[0m
+  [4;35;1mSQL (0.6ms)[0m   [0mSHOW TABLES[0m
+  [4;36;1mSQL (142.5ms)[0m   [0;1mCREATE TABLE `rights` (`id` int(11) DEFAULT NULL auto_increment PRIMARY KEY, `name` varchar(255), `controller` varchar(255), `action` varchar(255), `created_at` datetime, `updated_at` datetime) ENGINE=InnoDB[0m
+  [4;35;1mSQL (0.7ms)[0m   [0mSHOW TABLES[0m
+  [4;36;1mSQL (98.9ms)[0m   [0;1mCREATE TABLE `rights_roles` (`right_id` int(11), `role_id` int(11), `created_at` datetime, `updated_at` datetime) ENGINE=InnoDB[0m
+  [4;35;1mSQL (0.6ms)[0m   [0mSHOW TABLES[0m
+  [4;36;1mSQL (99.8ms)[0m   [0;1mCREATE TABLE `roles` (`id` int(11) DEFAULT NULL auto_increment PRIMARY KEY, `name` varchar(255), `created_at` datetime, `updated_at` datetime) ENGINE=InnoDB[0m
+  [4;35;1mSQL (0.6ms)[0m   [0mSHOW TABLES[0m
+  [4;36;1mSQL (99.6ms)[0m   [0;1mCREATE TABLE `roles_users` (`role_id` int(11), `user_id` int(11), `created_at` datetime, `updated_at` datetime) ENGINE=InnoDB[0m
+  [4;35;1mSQL (0.6ms)[0m   [0mSHOW TABLES[0m
+  [4;36;1mSQL (99.7ms)[0m   [0;1mCREATE TABLE `user_sessions` (`id` int(11) DEFAULT NULL auto_increment PRIMARY KEY, `username` varchar(255), `password` varchar(255), `created_at` datetime, `updated_at` datetime) ENGINE=InnoDB[0m
+  [4;35;1mSQL (0.7ms)[0m   [0mSHOW TABLES[0m
+  [4;36;1mSQL (98.4ms)[0m   [0;1mCREATE TABLE `users` (`id` int(11) DEFAULT NULL auto_increment PRIMARY KEY, `username` varchar(255), `email` varchar(255), `crypted_password` varchar(255), `password_salt` varchar(255), `persistence_token` varchar(255), `perishable_token` varchar(255), `login_count` int(11) DEFAULT 0 NOT NULL, `failed_login_count` int(11) DEFAULT 0 NOT NULL, `last_request_at` datetime, `current_login_at` datetime, `last_login_at` datetime, `current_login_ip` varchar(255), `last_login_ip` varchar(255), `created_at` datetime, `updated_at` datetime) ENGINE=InnoDB[0m
+  [4;35;1mSQL (0.6ms)[0m   [0mSHOW TABLES[0m
+  [4;36;1mSQL (85.9ms)[0m   [0;1mCREATE TABLE `schema_migrations` (`version` varchar(255) NOT NULL) ENGINE=InnoDB[0m
+  [4;35;1mSQL (242.2ms)[0m   [0mCREATE UNIQUE INDEX `unique_schema_migrations` ON `schema_migrations` (`version`)[0m
+  [4;36;1mSQL (0.6ms)[0m   [0;1mSHOW TABLES[0m
+  [4;35;1mSQL (1.1ms)[0m   [0mSELECT version FROM `schema_migrations`[0m
+  [4;36;1mSQL (45.8ms)[0m   [0;1mINSERT INTO `schema_migrations` (version) VALUES ('20091204021450')[0m
+  [4;35;1mSQL (43.1ms)[0m   [0mINSERT INTO `schema_migrations` (version) VALUES ('20090807122123')[0m
+  [4;36;1mSQL (43.1ms)[0m   [0;1mINSERT INTO `schema_migrations` (version) VALUES ('20090502094230')[0m
+  [4;35;1mSQL (43.3ms)[0m   [0mINSERT INTO `schema_migrations` (version) VALUES ('20090831192548')[0m
+  [4;36;1mSQL (43.1ms)[0m   [0;1mINSERT INTO `schema_migrations` (version) VALUES ('20090831192510')[0m
+  [4;35;1mSQL (43.2ms)[0m   [0mINSERT INTO `schema_migrations` (version) VALUES ('20090319191513')[0m
+  [4;36;1mSQL (43.2ms)[0m   [0;1mINSERT INTO `schema_migrations` (version) VALUES ('20090831192618')[0m
+  [4;35;1mSQL (44.7ms)[0m   [0mINSERT INTO `schema_migrations` (version) VALUES ('20090807141414')[0m
+  [4;36;1mSQL (57.5ms)[0m   [0;1mINSERT INTO `schema_migrations` (version) VALUES ('20090831192450')[0m
+  [4;35;1mSQL (57.5ms)[0m   [0mINSERT INTO `schema_migrations` (version) VALUES ('20090502094200')[0m
+  [4;36;1mSQL (0.4ms)[0m   [0;1mSET NAMES 'utf8'[0m
+  [4;35;1mSQL (0.1ms)[0m   [0mSET SQL_AUTO_IS_NULL=0[0m
+  [4;36;1mSQL (1.2ms)[0m   [0;1mSHOW TABLES[0m
+  [4;35;1mSQL (0.1ms)[0m   [0mSELECT version FROM schema_migrations[0m
+  [4;36;1mSQL (0.3ms)[0m   [0;1mSHOW TABLES[0m
+  [4;35;1mSQL (0.1ms)[0m   [0mSELECT version FROM schema_migrations[0m
+Migrating to CreateRealtors (20091204021450)
+  [4;36;1mSQL (93.7ms)[0m   [0;1mDROP TABLE `realtors`[0m
+  [4;35;1mSQL (67.6ms)[0m   [0mDELETE FROM schema_migrations WHERE version = '20091204021450'[0m
+  [4;36;1mSQL (0.4ms)[0m   [0;1mSHOW TABLES[0m
+  [4;35;1mSQL (0.2ms)[0m   [0mSELECT version FROM schema_migrations[0m
+  [4;36;1mSQL (0.2ms)[0m   [0;1mSHOW TABLES[0m
+  [4;35;1mSQL (0.6ms)[0m   [0mSHOW FIELDS FROM `four_oh_fours`[0m
+  [4;36;1mSQL (0.5ms)[0m   [0;1mdescribe `four_oh_fours`[0m
+  [4;35;1mSQL (0.3ms)[0m   [0mSHOW KEYS FROM `four_oh_fours`[0m
+  [4;36;1mSQL (0.6ms)[0m   [0;1mSHOW FIELDS FROM `menu_items`[0m
+  [4;35;1mSQL (0.5ms)[0m   [0mdescribe `menu_items`[0m
+  [4;36;1mSQL (0.4ms)[0m   [0;1mSHOW KEYS FROM `menu_items`[0m
+  [4;35;1mSQL (0.7ms)[0m   [0mSHOW FIELDS FROM `page_versions`[0m
+  [4;36;1mSQL (0.6ms)[0m   [0;1mdescribe `page_versions`[0m
+  [4;35;1mSQL (0.2ms)[0m   [0mSHOW KEYS FROM `page_versions`[0m
+  [4;36;1mSQL (0.6ms)[0m   [0;1mSHOW FIELDS FROM `pages`[0m
+  [4;35;1mSQL (0.7ms)[0m   [0mdescribe `pages`[0m
+  [4;36;1mSQL (0.3ms)[0m   [0;1mSHOW KEYS FROM `pages`[0m
+  [4;35;1mSQL (0.5ms)[0m   [0mSHOW FIELDS FROM `rights`[0m
+  [4;36;1mSQL (1.4ms)[0m   [0;1mdescribe `rights`[0m
+  [4;35;1mSQL (0.3ms)[0m   [0mSHOW KEYS FROM `rights`[0m
+  [4;36;1mSQL (0.5ms)[0m   [0;1mSHOW FIELDS FROM `rights_roles`[0m
+  [4;35;1mSQL (0.4ms)[0m   [0mdescribe `rights_roles`[0m
+  [4;36;1mSQL (0.2ms)[0m   [0;1mSHOW KEYS FROM `rights_roles`[0m
+  [4;35;1mSQL (0.5ms)[0m   [0mSHOW FIELDS FROM `roles`[0m
+  [4;36;1mSQL (0.4ms)[0m   [0;1mdescribe `roles`[0m
+  [4;35;1mSQL (0.2ms)[0m   [0mSHOW KEYS FROM `roles`[0m
+  [4;36;1mSQL (0.5ms)[0m   [0;1mSHOW FIELDS FROM `roles_users`[0m
+  [4;35;1mSQL (0.4ms)[0m   [0mdescribe `roles_users`[0m
+  [4;36;1mSQL (0.2ms)[0m   [0;1mSHOW KEYS FROM `roles_users`[0m
+  [4;35;1mSQL (0.5ms)[0m   [0mSHOW FIELDS FROM `user_sessions`[0m
+  [4;36;1mSQL (1.8ms)[0m   [0;1mdescribe `user_sessions`[0m
+  [4;35;1mSQL (0.2ms)[0m   [0mSHOW KEYS FROM `user_sessions`[0m
+  [4;36;1mSQL (0.8ms)[0m   [0;1mSHOW FIELDS FROM `users`[0m
+  [4;35;1mSQL (0.8ms)[0m   [0mdescribe `users`[0m
+  [4;36;1mSQL (0.3ms)[0m   [0;1mSHOW KEYS FROM `users`[0m
+  [4;36;1mSQL (0.1ms)[0m   [0;1mSET NAMES 'utf8'[0m
+  [4;35;1mSQL (0.1ms)[0m   [0mSET SQL_AUTO_IS_NULL=0[0m
+  [4;36;1mSQL (0.3ms)[0m   [0;1mSHOW TABLES[0m
+  [4;35;1mSQL (0.1ms)[0m   [0mSELECT version FROM schema_migrations[0m
+Migrating to CreatePages (20090319191513)
+Migrating to CreateFourOhFours (20090502094200)
+Migrating to CreateMenuItems (20090502094230)
+Migrating to CreateUsers (20090807122123)
+Migrating to CreateUserSessions (20090807141414)
+Migrating to CreateRoles (20090831192450)
+Migrating to CreateRights (20090831192510)
+Migrating to CreateRolesUsers (20090831192548)
+Migrating to CreateRightsRoles (20090831192618)
+Migrating to CreateRealtors (20091204021450)
+  [4;36;1mSQL (117.5ms)[0m   [0;1mCREATE TABLE `realtors` (`id` int(11) DEFAULT NULL auto_increment PRIMARY KEY, `name` varchar(255), `phone_number` varchar(255), `cell_number` varchar(255), `voicemail_number` varchar(255), `email` varchar(255), `website` varchar(255), `bio_link` varchar(255), `url_tag` varchar(255), `created_at` datetime, `updated_at` datetime) ENGINE=InnoDB[0m
+  [4;35;1mSQL (85.7ms)[0m   [0mINSERT INTO schema_migrations (version) VALUES ('20091204021450')[0m
+  [4;36;1mSQL (0.4ms)[0m   [0;1mSHOW TABLES[0m
+  [4;35;1mSQL (0.2ms)[0m   [0mSELECT version FROM schema_migrations[0m
+  [4;36;1mSQL (0.2ms)[0m   [0;1mSHOW TABLES[0m
+  [4;35;1mSQL (0.6ms)[0m   [0mSHOW FIELDS FROM `four_oh_fours`[0m
+  [4;36;1mSQL (0.5ms)[0m   [0;1mdescribe `four_oh_fours`[0m
+  [4;35;1mSQL (0.3ms)[0m   [0mSHOW KEYS FROM `four_oh_fours`[0m
+  [4;36;1mSQL (0.6ms)[0m   [0;1mSHOW FIELDS FROM `menu_items`[0m
+  [4;35;1mSQL (0.6ms)[0m   [0mdescribe `menu_items`[0m
+  [4;36;1mSQL (0.2ms)[0m   [0;1mSHOW KEYS FROM `menu_items`[0m
+  [4;35;1mSQL (0.7ms)[0m   [0mSHOW FIELDS FROM `page_versions`[0m
+  [4;36;1mSQL (0.6ms)[0m   [0;1mdescribe `page_versions`[0m
+  [4;35;1mSQL (0.2ms)[0m   [0mSHOW KEYS FROM `page_versions`[0m
+  [4;36;1mSQL (0.7ms)[0m   [0;1mSHOW FIELDS FROM `pages`[0m
+  [4;35;1mSQL (0.6ms)[0m   [0mdescribe `pages`[0m
+  [4;36;1mSQL (0.3ms)[0m   [0;1mSHOW KEYS FROM `pages`[0m
+  [4;35;1mSQL (0.7ms)[0m   [0mSHOW FIELDS FROM `realtors`[0m
+  [4;36;1mSQL (0.7ms)[0m   [0;1mdescribe `realtors`[0m
+  [4;35;1mSQL (0.2ms)[0m   [0mSHOW KEYS FROM `realtors`[0m
+  [4;36;1mSQL (0.5ms)[0m   [0;1mSHOW FIELDS FROM `rights`[0m
+  [4;35;1mSQL (0.5ms)[0m   [0mdescribe `rights`[0m
+  [4;36;1mSQL (0.2ms)[0m   [0;1mSHOW KEYS FROM `rights`[0m
+  [4;35;1mSQL (0.5ms)[0m   [0mSHOW FIELDS FROM `rights_roles`[0m
+  [4;36;1mSQL (0.5ms)[0m   [0;1mdescribe `rights_roles`[0m
+  [4;35;1mSQL (0.2ms)[0m   [0mSHOW KEYS FROM `rights_roles`[0m
+  [4;36;1mSQL (0.4ms)[0m   [0;1mSHOW FIELDS FROM `roles`[0m
+  [4;35;1mSQL (0.4ms)[0m   [0mdescribe `roles`[0m
+  [4;36;1mSQL (0.2ms)[0m   [0;1mSHOW KEYS FROM `roles`[0m
+  [4;35;1mSQL (0.4ms)[0m   [0mSHOW FIELDS FROM `roles_users`[0m
+  [4;36;1mSQL (0.4ms)[0m   [0;1mdescribe `roles_users`[0m
+  [4;35;1mSQL (0.2ms)[0m   [0mSHOW KEYS FROM `roles_users`[0m
+  [4;36;1mSQL (0.5ms)[0m   [0;1mSHOW FIELDS FROM `user_sessions`[0m
+  [4;35;1mSQL (0.5ms)[0m   [0mdescribe `user_sessions`[0m
+  [4;36;1mSQL (0.2ms)[0m   [0;1mSHOW KEYS FROM `user_sessions`[0m
+  [4;35;1mSQL (0.8ms)[0m   [0mSHOW FIELDS FROM `users`[0m
+  [4;36;1mSQL (0.8ms)[0m   [0;1mdescribe `users`[0m
+  [4;35;1mSQL (0.3ms)[0m   [0mSHOW KEYS FROM `users`[0m
+  [4;36;1mSQL (0.1ms)[0m   [0;1mSET NAMES 'utf8'[0m
+  [4;35;1mSQL (0.1ms)[0m   [0mSET SQL_AUTO_IS_NULL=0[0m
+  [4;36;1mSQL (0.4ms)[0m   [0;1mSHOW TABLES[0m
+  [4;35;1mSQL (0.1ms)[0m   [0mSELECT version FROM schema_migrations[0m
+  [4;36;1mSQL (0.2ms)[0m   [0;1mSHOW TABLES[0m
+  [4;35;1mSQL (0.6ms)[0m   [0mSHOW FIELDS FROM `four_oh_fours`[0m
+  [4;36;1mSQL (0.5ms)[0m   [0;1mdescribe `four_oh_fours`[0m
+  [4;35;1mSQL (0.3ms)[0m   [0mSHOW KEYS FROM `four_oh_fours`[0m
+  [4;36;1mSQL (0.6ms)[0m   [0;1mSHOW FIELDS FROM `menu_items`[0m
+  [4;35;1mSQL (0.5ms)[0m   [0mdescribe `menu_items`[0m
+  [4;36;1mSQL (0.2ms)[0m   [0;1mSHOW KEYS FROM `menu_items`[0m
+  [4;35;1mSQL (0.6ms)[0m   [0mSHOW FIELDS FROM `page_versions`[0m
+  [4;36;1mSQL (0.6ms)[0m   [0;1mdescribe `page_versions`[0m
+  [4;35;1mSQL (0.2ms)[0m   [0mSHOW KEYS FROM `page_versions`[0m
+  [4;36;1mSQL (0.6ms)[0m   [0;1mSHOW FIELDS FROM `pages`[0m
+  [4;35;1mSQL (0.6ms)[0m   [0mdescribe `pages`[0m
+  [4;36;1mSQL (0.3ms)[0m   [0;1mSHOW KEYS FROM `pages`[0m
+  [4;35;1mSQL (0.7ms)[0m   [0mSHOW FIELDS FROM `realtors`[0m
+  [4;36;1mSQL (0.6ms)[0m   [0;1mdescribe `realtors`[0m
+  [4;35;1mSQL (0.2ms)[0m   [0mSHOW KEYS FROM `realtors`[0m
+  [4;36;1mSQL (0.5ms)[0m   [0;1mSHOW FIELDS FROM `rights`[0m
+  [4;35;1mSQL (0.5ms)[0m   [0mdescribe `rights`[0m
+  [4;36;1mSQL (0.2ms)[0m   [0;1mSHOW KEYS FROM `rights`[0m
+  [4;35;1mSQL (0.5ms)[0m   [0mSHOW FIELDS FROM `rights_roles`[0m
+  [4;36;1mSQL (0.4ms)[0m   [0;1mdescribe `rights_roles`[0m
+  [4;35;1mSQL (0.2ms)[0m   [0mSHOW KEYS FROM `rights_roles`[0m
+  [4;36;1mSQL (0.5ms)[0m   [0;1mSHOW FIELDS FROM `roles`[0m
+  [4;35;1mSQL (0.4ms)[0m   [0mdescribe `roles`[0m
+  [4;36;1mSQL (0.2ms)[0m   [0;1mSHOW KEYS FROM `roles`[0m
+  [4;35;1mSQL (0.5ms)[0m   [0mSHOW FIELDS FROM `roles_users`[0m
+  [4;36;1mSQL (0.4ms)[0m   [0;1mdescribe `roles_users`[0m
+  [4;35;1mSQL (0.3ms)[0m   [0mSHOW KEYS FROM `roles_users`[0m
+  [4;36;1mSQL (0.5ms)[0m   [0;1mSHOW FIELDS FROM `user_sessions`[0m
+  [4;35;1mSQL (0.5ms)[0m   [0mdescribe `user_sessions`[0m
+  [4;36;1mSQL (0.2ms)[0m   [0;1mSHOW KEYS FROM `user_sessions`[0m
+  [4;35;1mSQL (0.8ms)[0m   [0mSHOW FIELDS FROM `users`[0m
+  [4;36;1mSQL (0.8ms)[0m   [0;1mdescribe `users`[0m
+  [4;35;1mSQL (0.3ms)[0m   [0mSHOW KEYS FROM `users`[0m
+  [4;36;1mSQL (0.1ms)[0m   [0;1mSET NAMES 'utf8'[0m
+  [4;35;1mSQL (0.1ms)[0m   [0mSET SQL_AUTO_IS_NULL=0[0m
+  [4;36;1mSQL (585.5ms)[0m   [0;1mDROP DATABASE IF EXISTS `ohiorealtygroup_test`[0m
+  [4;35;1mSQL (0.2ms)[0m   [0mCREATE DATABASE `ohiorealtygroup_test` DEFAULT CHARACTER SET `utf8`[0m
+  [4;36;1mSQL (0.1ms)[0m   [0;1mSET NAMES 'utf8'[0m
+  [4;35;1mSQL (0.1ms)[0m   [0mSET SQL_AUTO_IS_NULL=0[0m
+  [4;36;1mSQL (0.2ms)[0m   [0;1mSHOW TABLES[0m
+  [4;35;1mSQL (103.7ms)[0m   [0mCREATE TABLE `four_oh_fours` (`id` int(11) DEFAULT NULL auto_increment PRIMARY KEY, `host` varchar(255), `path` varchar(255), `referer` varchar(255), `count` int(11) DEFAULT 0, `created_at` datetime, `updated_at` datetime) ENGINE=InnoDB[0m
+  [4;36;1mSQL (276.9ms)[0m   [0;1mCREATE UNIQUE INDEX `index_four_oh_fours_on_host_and_path_and_referer` ON `four_oh_fours` (`host`, `path`, `referer`)[0m
+  [4;35;1mSQL (219.5ms)[0m   [0mCREATE INDEX `index_four_oh_fours_on_path` ON `four_oh_fours` (`path`)[0m
+  [4;36;1mSQL (0.3ms)[0m   [0;1mSHOW TABLES[0m
+  [4;35;1mSQL (100.1ms)[0m   [0mCREATE TABLE `menu_items` (`id` int(11) DEFAULT NULL auto_increment PRIMARY KEY, `position` int(11), `parent_id` int(11), `label` varchar(255), `page_id` varchar(255), `url` varchar(255), `created_at` datetime, `updated_at` datetime) ENGINE=InnoDB[0m
+  [4;36;1mSQL (0.3ms)[0m   [0;1mSHOW TABLES[0m
+  [4;35;1mSQL (101.9ms)[0m   [0mCREATE TABLE `page_versions` (`id` int(11) DEFAULT NULL auto_increment PRIMARY KEY, `page_id` int(11), `version` int(11), `url_tag` varchar(255), `title` varchar(255), `html_title` varchar(255), `keywords` varchar(255), `description` varchar(255), `content` text, `published` tinyint(1), `updated_at` datetime) ENGINE=InnoDB[0m
+  [4;36;1mSQL (0.3ms)[0m   [0;1mSHOW TABLES[0m
+  [4;35;1mSQL (86.1ms)[0m   [0mCREATE TABLE `pages` (`id` int(11) DEFAULT NULL auto_increment PRIMARY KEY, `url_tag` varchar(255), `title` varchar(255), `html_title` varchar(255), `keywords` varchar(255), `description` varchar(255), `content` text, `published` tinyint(1), `created_at` datetime, `updated_at` datetime, `version` int(11)) ENGINE=InnoDB[0m
+  [4;36;1mSQL (251.7ms)[0m   [0;1mCREATE INDEX `index_pages_on_url_tag` ON `pages` (`url_tag`)[0m
+  [4;35;1mSQL (0.4ms)[0m   [0mSHOW TABLES[0m
+  [4;36;1mSQL (356.1ms)[0m   [0;1mCREATE TABLE `realtors` (`id` int(11) DEFAULT NULL auto_increment PRIMARY KEY, `name` varchar(255), `phone_number` varchar(255), `cell_number` varchar(255), `voicemail_number` varchar(255), `email` varchar(255), `website` varchar(255), `bio_link` varchar(255), `url_tag` varchar(255), `created_at` datetime, `updated_at` datetime) ENGINE=InnoDB[0m
+  [4;35;1mSQL (0.9ms)[0m   [0mSHOW TABLES[0m
+  [4;36;1mSQL (222.9ms)[0m   [0;1mCREATE TABLE `rights` (`id` int(11) DEFAULT NULL auto_increment PRIMARY KEY, `name` varchar(255), `controller` varchar(255), `action` varchar(255), `created_at` datetime, `updated_at` datetime) ENGINE=InnoDB[0m
+  [4;35;1mSQL (0.7ms)[0m   [0mSHOW TABLES[0m
+  [4;36;1mSQL (90.9ms)[0m   [0;1mCREATE TABLE `rights_roles` (`right_id` int(11), `role_id` int(11), `created_at` datetime, `updated_at` datetime) ENGINE=InnoDB[0m
+  [4;35;1mSQL (0.6ms)[0m   [0mSHOW TABLES[0m
+  [4;36;1mSQL (112.9ms)[0m   [0;1mCREATE TABLE `roles` (`id` int(11) DEFAULT NULL auto_increment PRIMARY KEY, `name` varchar(255), `created_at` datetime, `updated_at` datetime) ENGINE=InnoDB[0m
+  [4;35;1mSQL (0.6ms)[0m   [0mSHOW TABLES[0m
+  [4;36;1mSQL (100.6ms)[0m   [0;1mCREATE TABLE `roles_users` (`role_id` int(11), `user_id` int(11), `created_at` datetime, `updated_at` datetime) ENGINE=InnoDB[0m
+  [4;35;1mSQL (0.6ms)[0m   [0mSHOW TABLES[0m
+  [4;36;1mSQL (99.6ms)[0m   [0;1mCREATE TABLE `user_sessions` (`id` int(11) DEFAULT NULL auto_increment PRIMARY KEY, `username` varchar(255), `password` varchar(255), `created_at` datetime, `updated_at` datetime) ENGINE=InnoDB[0m
+  [4;35;1mSQL (0.6ms)[0m   [0mSHOW TABLES[0m
+  [4;36;1mSQL (97.6ms)[0m   [0;1mCREATE TABLE `users` (`id` int(11) DEFAULT NULL auto_increment PRIMARY KEY, `username` varchar(255), `email` varchar(255), `crypted_password` varchar(255), `password_salt` varchar(255), `persistence_token` varchar(255), `perishable_token` varchar(255), `login_count` int(11) DEFAULT 0 NOT NULL, `failed_login_count` int(11) DEFAULT 0 NOT NULL, `last_request_at` datetime, `current_login_at` datetime, `last_login_at` datetime, `current_login_ip` varchar(255), `last_login_ip` varchar(255), `created_at` datetime, `updated_at` datetime) ENGINE=InnoDB[0m
+  [4;35;1mSQL (0.7ms)[0m   [0mSHOW TABLES[0m
+  [4;36;1mSQL (101.6ms)[0m   [0;1mCREATE TABLE `schema_migrations` (`version` varchar(255) NOT NULL) ENGINE=InnoDB[0m
+  [4;35;1mSQL (234.4ms)[0m   [0mCREATE UNIQUE INDEX `unique_schema_migrations` ON `schema_migrations` (`version`)[0m
+  [4;36;1mSQL (0.6ms)[0m   [0;1mSHOW TABLES[0m
+  [4;35;1mSQL (0.6ms)[0m   [0mSELECT version FROM `schema_migrations`[0m
+  [4;36;1mSQL (54.1ms)[0m   [0;1mINSERT INTO `schema_migrations` (version) VALUES ('20091204021450')[0m
+  [4;35;1mSQL (287.2ms)[0m   [0mINSERT INTO `schema_migrations` (version) VALUES ('20090807122123')[0m
+  [4;36;1mSQL (42.9ms)[0m   [0;1mINSERT INTO `schema_migrations` (version) VALUES ('20090502094230')[0m
+  [4;35;1mSQL (43.2ms)[0m   [0mINSERT INTO `schema_migrations` (version) VALUES ('20090831192548')[0m
+  [4;36;1mSQL (43.3ms)[0m   [0;1mINSERT INTO `schema_migrations` (version) VALUES ('20090831192510')[0m
+  [4;35;1mSQL (43.3ms)[0m   [0mINSERT INTO `schema_migrations` (version) VALUES ('20090319191513')[0m
+  [4;36;1mSQL (43.1ms)[0m   [0;1mINSERT INTO `schema_migrations` (version) VALUES ('20090831192618')[0m
+  [4;35;1mSQL (44.7ms)[0m   [0mINSERT INTO `schema_migrations` (version) VALUES ('20090807141414')[0m
+  [4;36;1mSQL (43.2ms)[0m   [0;1mINSERT INTO `schema_migrations` (version) VALUES ('20090831192450')[0m
+  [4;35;1mSQL (43.2ms)[0m   [0mINSERT INTO `schema_migrations` (version) VALUES ('20090502094200')[0m
+  [4;36;1mSQL (0.1ms)[0m   [0;1mSET NAMES 'utf8'[0m
+  [4;35;1mSQL (0.1ms)[0m   [0mSET SQL_AUTO_IS_NULL=0[0m
+  [4;36;1mSQL (0.4ms)[0m   [0;1mSHOW TABLES[0m
+  [4;35;1mSQL (0.1ms)[0m   [0mSELECT version FROM schema_migrations[0m
+  [4;36;1mSQL (0.2ms)[0m   [0;1mSHOW TABLES[0m
+  [4;35;1mSQL (0.6ms)[0m   [0mSHOW FIELDS FROM `four_oh_fours`[0m
+  [4;36;1mSQL (0.6ms)[0m   [0;1mdescribe `four_oh_fours`[0m
+  [4;35;1mSQL (0.3ms)[0m   [0mSHOW KEYS FROM `four_oh_fours`[0m
+  [4;36;1mSQL (0.6ms)[0m   [0;1mSHOW FIELDS FROM `menu_items`[0m
+  [4;35;1mSQL (0.5ms)[0m   [0mdescribe `menu_items`[0m
+  [4;36;1mSQL (0.2ms)[0m   [0;1mSHOW KEYS FROM `menu_items`[0m
+  [4;35;1mSQL (0.7ms)[0m   [0mSHOW FIELDS FROM `page_versions`[0m
+  [4;36;1mSQL (0.6ms)[0m   [0;1mdescribe `page_versions`[0m
+  [4;35;1mSQL (0.2ms)[0m   [0mSHOW KEYS FROM `page_versions`[0m
+  [4;36;1mSQL (0.6ms)[0m   [0;1mSHOW FIELDS FROM `pages`[0m
+  [4;35;1mSQL (0.6ms)[0m   [0mdescribe `pages`[0m
+  [4;36;1mSQL (0.3ms)[0m   [0;1mSHOW KEYS FROM `pages`[0m
+  [4;35;1mSQL (0.6ms)[0m   [0mSHOW FIELDS FROM `realtors`[0m
+  [4;36;1mSQL (0.6ms)[0m   [0;1mdescribe `realtors`[0m
+  [4;35;1mSQL (0.2ms)[0m   [0mSHOW KEYS FROM `realtors`[0m
+  [4;36;1mSQL (0.5ms)[0m   [0;1mSHOW FIELDS FROM `rights`[0m
+  [4;35;1mSQL (0.5ms)[0m   [0mdescribe `rights`[0m
+  [4;36;1mSQL (0.2ms)[0m   [0;1mSHOW KEYS FROM `rights`[0m
+  [4;35;1mSQL (0.4ms)[0m   [0mSHOW FIELDS FROM `rights_roles`[0m
+  [4;36;1mSQL (0.4ms)[0m   [0;1mdescribe `rights_roles`[0m
+  [4;35;1mSQL (0.2ms)[0m   [0mSHOW KEYS FROM `rights_roles`[0m
+  [4;36;1mSQL (0.4ms)[0m   [0;1mSHOW FIELDS FROM `roles`[0m
+  [4;35;1mSQL (0.4ms)[0m   [0mdescribe `roles`[0m
+  [4;36;1mSQL (0.2ms)[0m   [0;1mSHOW KEYS FROM `roles`[0m
+  [4;35;1mSQL (0.4ms)[0m   [0mSHOW FIELDS FROM `roles_users`[0m
+  [4;36;1mSQL (0.4ms)[0m   [0;1mdescribe `roles_users`[0m
+  [4;35;1mSQL (0.2ms)[0m   [0mSHOW KEYS FROM `roles_users`[0m
+  [4;36;1mSQL (0.5ms)[0m   [0;1mSHOW FIELDS FROM `user_sessions`[0m
+  [4;35;1mSQL (0.5ms)[0m   [0mdescribe `user_sessions`[0m
+  [4;36;1mSQL (0.2ms)[0m   [0;1mSHOW KEYS FROM `user_sessions`[0m
+  [4;35;1mSQL (0.8ms)[0m   [0mSHOW FIELDS FROM `users`[0m
+  [4;36;1mSQL (0.7ms)[0m   [0;1mdescribe `users`[0m
+  [4;35;1mSQL (0.3ms)[0m   [0mSHOW KEYS FROM `users`[0m
+  [4;36;1mSQL (0.1ms)[0m   [0;1mSET NAMES 'utf8'[0m
+  [4;35;1mSQL (0.1ms)[0m   [0mSET SQL_AUTO_IS_NULL=0[0m
+  [4;36;1mSQL (587.9ms)[0m   [0;1mDROP DATABASE IF EXISTS `ohiorealtygroup_test`[0m
+  [4;35;1mSQL (0.2ms)[0m   [0mCREATE DATABASE `ohiorealtygroup_test` DEFAULT CHARACTER SET `utf8`[0m
+  [4;36;1mSQL (0.1ms)[0m   [0;1mSET NAMES 'utf8'[0m
+  [4;35;1mSQL (0.1ms)[0m   [0mSET SQL_AUTO_IS_NULL=0[0m
+  [4;36;1mSQL (0.2ms)[0m   [0;1mSHOW TABLES[0m
+  [4;35;1mSQL (119.3ms)[0m   [0mCREATE TABLE `four_oh_fours` (`id` int(11) DEFAULT NULL auto_increment PRIMARY KEY, `host` varchar(255), `path` varchar(255), `referer` varchar(255), `count` int(11) DEFAULT 0, `created_at` datetime, `updated_at` datetime) ENGINE=InnoDB[0m
+  [4;36;1mSQL (248.6ms)[0m   [0;1mCREATE UNIQUE INDEX `index_four_oh_fours_on_host_and_path_and_referer` ON `four_oh_fours` (`host`, `path`, `referer`)[0m
+  [4;35;1mSQL (292.6ms)[0m   [0mCREATE INDEX `index_four_oh_fours_on_path` ON `four_oh_fours` (`path`)[0m
+  [4;36;1mSQL (0.3ms)[0m   [0;1mSHOW TABLES[0m
+  [4;35;1mSQL (114.8ms)[0m   [0mCREATE TABLE `menu_items` (`id` int(11) DEFAULT NULL auto_increment PRIMARY KEY, `position` int(11), `parent_id` int(11), `label` varchar(255), `page_id` varchar(255), `url` varchar(255), `created_at` datetime, `updated_at` datetime) ENGINE=InnoDB[0m
+  [4;36;1mSQL (0.3ms)[0m   [0;1mSHOW TABLES[0m
+  [4;35;1mSQL (100.5ms)[0m   [0mCREATE TABLE `page_versions` (`id` int(11) DEFAULT NULL auto_increment PRIMARY KEY, `page_id` int(11), `version` int(11), `url_tag` varchar(255), `title` varchar(255), `html_title` varchar(255), `keywords` varchar(255), `description` varchar(255), `content` text, `published` tinyint(1), `updated_at` datetime) ENGINE=InnoDB[0m
+  [4;36;1mSQL (0.3ms)[0m   [0;1mSHOW TABLES[0m
+  [4;35;1mSQL (100.5ms)[0m   [0mCREATE TABLE `pages` (`id` int(11) DEFAULT NULL auto_increment PRIMARY KEY, `url_tag` varchar(255), `title` varchar(255), `html_title` varchar(255), `keywords` varchar(255), `description` varchar(255), `content` text, `published` tinyint(1), `created_at` datetime, `updated_at` datetime, `version` int(11)) ENGINE=InnoDB[0m
+  [4;36;1mSQL (221.9ms)[0m   [0;1mCREATE INDEX `index_pages_on_url_tag` ON `pages` (`url_tag`)[0m
+  [4;35;1mSQL (0.5ms)[0m   [0mSHOW TABLES[0m
+  [4;36;1mSQL (112.4ms)[0m   [0;1mCREATE TABLE `realtors` (`id` int(11) DEFAULT NULL auto_increment PRIMARY KEY, `name` varchar(255), `phone_number` varchar(255), `cell_number` varchar(255), `voicemail_number` varchar(255), `email` varchar(255), `website` varchar(255), `bio_link` varchar(255), `url_tag` varchar(255), `created_at` datetime, `updated_at` datetime) ENGINE=InnoDB[0m
+  [4;35;1mSQL (0.6ms)[0m   [0mSHOW TABLES[0m
+  [4;36;1mSQL (142.5ms)[0m   [0;1mCREATE TABLE `rights` (`id` int(11) DEFAULT NULL auto_increment PRIMARY KEY, `name` varchar(255), `controller` varchar(255), `action` varchar(255), `created_at` datetime, `updated_at` datetime) ENGINE=InnoDB[0m
+  [4;35;1mSQL (0.6ms)[0m   [0mSHOW TABLES[0m
+  [4;36;1mSQL (99.8ms)[0m   [0;1mCREATE TABLE `rights_roles` (`right_id` int(11), `role_id` int(11), `created_at` datetime, `updated_at` datetime) ENGINE=InnoDB[0m
+  [4;35;1mSQL (0.6ms)[0m   [0mSHOW TABLES[0m
+  [4;36;1mSQL (99.7ms)[0m   [0;1mCREATE TABLE `roles` (`id` int(11) DEFAULT NULL auto_increment PRIMARY KEY, `name` varchar(255), `created_at` datetime, `updated_at` datetime) ENGINE=InnoDB[0m
+  [4;35;1mSQL (0.6ms)[0m   [0mSHOW TABLES[0m
+  [4;36;1mSQL (99.9ms)[0m   [0;1mCREATE TABLE `roles_users` (`role_id` int(11), `user_id` int(11), `created_at` datetime, `updated_at` datetime) ENGINE=InnoDB[0m
+  [4;35;1mSQL (0.6ms)[0m   [0mSHOW TABLES[0m
+  [4;36;1mSQL (86.8ms)[0m   [0;1mCREATE TABLE `user_sessions` (`id` int(11) DEFAULT NULL auto_increment PRIMARY KEY, `username` varchar(255), `password` varchar(255), `created_at` datetime, `updated_at` datetime) ENGINE=InnoDB[0m
+  [4;35;1mSQL (0.6ms)[0m   [0mSHOW TABLES[0m
+  [4;36;1mSQL (97.9ms)[0m   [0;1mCREATE TABLE `users` (`id` int(11) DEFAULT NULL auto_increment PRIMARY KEY, `username` varchar(255), `email` varchar(255), `crypted_password` varchar(255), `password_salt` varchar(255), `persistence_token` varchar(255), `perishable_token` varchar(255), `login_count` int(11) DEFAULT 0 NOT NULL, `failed_login_count` int(11) DEFAULT 0 NOT NULL, `last_request_at` datetime, `current_login_at` datetime, `last_login_at` datetime, `current_login_ip` varchar(255), `last_login_ip` varchar(255), `created_at` datetime, `updated_at` datetime) ENGINE=InnoDB[0m
+  [4;35;1mSQL (0.6ms)[0m   [0mSHOW TABLES[0m
+  [4;36;1mSQL (85.9ms)[0m   [0;1mCREATE TABLE `schema_migrations` (`version` varchar(255) NOT NULL) ENGINE=InnoDB[0m
+  [4;35;1mSQL (248.9ms)[0m   [0mCREATE UNIQUE INDEX `unique_schema_migrations` ON `schema_migrations` (`version`)[0m
+  [4;36;1mSQL (0.6ms)[0m   [0;1mSHOW TABLES[0m
+  [4;35;1mSQL (0.5ms)[0m   [0mSELECT version FROM `schema_migrations`[0m
+  [4;36;1mSQL (39.9ms)[0m   [0;1mINSERT INTO `schema_migrations` (version) VALUES ('20091204021450')[0m
+  [4;35;1mSQL (43.2ms)[0m   [0mINSERT INTO `schema_migrations` (version) VALUES ('20090807122123')[0m
+  [4;36;1mSQL (43.5ms)[0m   [0;1mINSERT INTO `schema_migrations` (version) VALUES ('20090502094230')[0m
+  [4;35;1mSQL (44.6ms)[0m   [0mINSERT INTO `schema_migrations` (version) VALUES ('20090831192548')[0m
+  [4;36;1mSQL (43.2ms)[0m   [0;1mINSERT INTO `schema_migrations` (version) VALUES ('20090831192510')[0m
+  [4;35;1mSQL (43.2ms)[0m   [0mINSERT INTO `schema_migrations` (version) VALUES ('20090319191513')[0m
+  [4;36;1mSQL (57.7ms)[0m   [0;1mINSERT INTO `schema_migrations` (version) VALUES ('20090831192618')[0m
+  [4;35;1mSQL (43.3ms)[0m   [0mINSERT INTO `schema_migrations` (version) VALUES ('20090807141414')[0m
+  [4;36;1mSQL (44.2ms)[0m   [0;1mINSERT INTO `schema_migrations` (version) VALUES ('20090831192450')[0m
+  [4;35;1mSQL (82.2ms)[0m   [0mINSERT INTO `schema_migrations` (version) VALUES ('20090502094200')[0m
