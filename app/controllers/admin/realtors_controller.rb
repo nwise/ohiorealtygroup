@@ -75,11 +75,13 @@ class Admin::RealtorsController < ApplicationController
   # DELETE /realtors/1.xml
   def destroy
     @realtor = Realtor.find(params[:id])
-    @realtor.destroy
-
-    respond_to do |format|
-      format.html { redirect_to(realtors_url) }
-      format.xml  { head :ok }
+    
+    if @realtor.destroy
+      flash[:notice] = 'Realtor was successfully deleted.'
+      respond_to do |format|        
+        format.html { redirect_to(admin_realtors_url) }
+        format.xml  { head :ok }
+      end
     end
   end
 end

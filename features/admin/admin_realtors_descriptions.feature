@@ -48,4 +48,10 @@ Feature: Manage Realtors
       And I should see "Realtor Listing"
       And I should see "Phillip"
 
-   
+     Scenario: Delete a Realtor
+      Given I have a realtor named Phil
+      And I am logged in as "admin"
+      And I am on the admin list of realtors
+      When I follow "destroy" for the Realtor "Phil"
+      Then I should see "Realtor was successfully deleted."
+      And I should not see "Phil"

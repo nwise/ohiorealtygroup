@@ -2,21 +2,26 @@
 <table class="admin_table">
   <tr>
     <th>Name</th>
+    <th>Email</th>
     <th>Last Updated</th>
     <th>Actions</th>
   </tr>
 
 <% @realtors.each do |realtor| %>
   <tr class="admin_table_row <%= cycle('odd', 'even') %>_row" id="realtor_<%= realtor.id %>">
-    <td><%= link_to realtor.name, edit_admin_realtor_path(realtor) %></td>
-    <td><%= realtor.updated_at %></td>
-    <td><%= link_to 'Edit', edit_admin_realtor_path(realtor) %>
-        <%= link_to 'Delete', "/admin/realtors/#{realtor.id}", :confirm => 'Are you sure?', :method => :delete %></td>
+    <td><%= realtor.name %></td>
+    <td><%= realtor.email %></td>
+    <td><%= realtor.updated_at.strftime("%d-%B-%Y %I:%M%p") %></td>
+    <td><%= link_to image_tag('admin_icons/edit.png'), edit_admin_realtor_path(realtor) %>
+        <%= link_to image_tag('admin_icons/delete.png'), "/admin/realtors/#{realtor.id}",
+                    :confirm => 'Are you sure? This is irreversible.',
+                    :method => :delete,
+                    :id => "destroy_#{realtor.id}" %></td>
   </tr>
 <% end %>
 </table>
 
 <br />
 
-<%= link_to 'New realtor', new_admin_realtor_path %>
+<%= link_to image_tag('admin_icons/add.png', :alt => 'New Realtor') + 'New Realtor', new_admin_realtor_path %>
 <%= will_paginate @realtors %>
