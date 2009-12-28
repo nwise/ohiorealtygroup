@@ -1,10 +1,7 @@
 ActionController::Routing::Routes.draw do |map|
-  map.resources :realtors
-
   map.resources :files
 
   map.resources :file_browsers
-
 
   map.resources :user_sessions
   map.login 'login', :controller => 'user_sessions', :action => 'new'
@@ -25,6 +22,7 @@ ActionController::Routing::Routes.draw do |map|
     admin.resources :menu_items, :member => {:sort =>:any}
     admin.resources :page_versions, :member => {:restore => :any}
     admin.resources :users
+    admin.resources :realtors
   end
 
   map.root :controller => 'main', :action => 'content_page', :path => 'index'

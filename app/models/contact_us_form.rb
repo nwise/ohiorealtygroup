@@ -21,7 +21,7 @@ class ContactUsForm < ActiveRecord::Base
   validates_presence_of :first_name, :last_name, :address1, :city, :state, :zip, :phone, :email_address
 
   validates_format_of :phone,
-                      :with => /1?[\-\.]?[0-9]{3}[\-\.]?[0-9]{3}[\-\.]?[0-9]{4}/,
+                      :with => /^(1([\-\.]{1})?)?[0-9]{3}([\-\.]{1})?[0-9]{3}([\-\.]{1})?[0-9]{4}$/,
                       :message => 'is invalid'
 
   validates_format_of :first_name, :last_name, :address1, :address2, :city,

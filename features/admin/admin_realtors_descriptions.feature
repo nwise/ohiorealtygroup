@@ -22,81 +22,30 @@ Feature: Manage Realtors
       And I am logged in as "admin"
       And I am on the admin list of realtors
       When I follow "New Realtor"
-      And I fill in "page[title]" with "Employees"
-      And I fill in "page[content]" with "<p>Our employees</p>"
-      And I fill in "page[html_title]" with "Meet The Team"
-      And I fill in "page[url_tag]" with "employees"
-      And I fill in "page[description]" with "employees"
-      And I fill in "page[keywords]" with "employees"
+      And I fill in "realtor[name]" with "Phil"
+      And I fill in "realtor[phone_number]" with "123.456.7890"
+      And I fill in "realtor[cell_number]" with "456.789.0123"
+      And I fill in "realtor[voicemail_number]" with "111.111.1111"
+      And I fill in "realtor[email]" with "phil@ohiorealtygroup.com"
+      And I fill in "realtor[website]" with "http://www.ohiorealtygroup.com"
+      And I fill in "realtor[bio_link]" with "http://www.ohiorealtygroup.com/realtors/phil"
+      And I fill in "realtor[url_tag]" with "phil-march"
       And I press "Save"
       Then I should see "Realtor was successfully created."
-      And I should see "Employees"
-      And I should have 1 page
+      And I should see "Realtor Listing"
+      And I should have 1 realtor
 
     Scenario: Edit Valid Realtor
-      Given I have a page titled About
+      Given I have a realtor named Phil
       And I am logged in as "admin"
       And I am on the admin list of realtors
       When I follow "Edit"
-      And I fill in "page[title]" with "Employees"
-      And I fill in "page[content]" with "<p>Our employees</p>"
-      And I fill in "page[url_tag]" with "employees"
+      And I fill in "realtor[name]" with "Phillip"
+      And I fill in "realtor[phone_number]" with "123.456.7890"
+      And I fill in "realtor[url_tag]" with "phillip-march"
       And I press "Save"
       Then I should see "Realtor was successfully updated."
-      And I should see "Employees"
+      And I should see "Realtor Listing"
+      And I should see "Phillip"
 
-    Scenario: Create Invalid Realtor
-      Given I have no realtors
-      And I am logged in as "admin"
-      And I am on the admin list of realtors
-      When I follow "New Realtor"
-      And I fill in "page[title]" with ""
-      And I fill in "page[content]" with ""
-      And I fill in "page[url_tag]" with ""
-      And I press "Save"
-      Then I should see "errors prohibited this page"
-      And I should see "Title can't be blank"
-      And I should see "Content can't be blank"
-
-    Scenario: Update a Realtor with Invalid Attributes
-      Given I have a page titled About
-      And I am logged in as "admin"
-      And I am on the admin list of realtors
-      When I follow "Edit"
-      And I fill in "page[title]" with ""
-      And I fill in "page[content]" with "<p>Our employees</p>"
-      And I fill in "page[url_tag]" with "employees"
-      And I press "Save"
-      Then I should see "error prohibited this page"
-      And I should see "Title can't be blank"
-
-    Scenario: Delete a Realtor
-      Given I have a page titled Un1qu3
-      And I am logged in as "admin"
-      And I am on the admin list of realtors
-      When I follow "destroy" for the Realtor "Un1qu3"
-      Then I should see "Realtor was successfully deleted."
-      And I should not see "Un1qu3"
-
-    Scenario: Default URL Tag
-      Given I have no realtors
-      And I am logged in as "admin"
-      And I am on the admin list of realtors
-      When I follow "New Realtor"
-      And I fill in "page[title]" with "Employees"
-      And I fill in "page[content]" with "<p>Our employees</p>"
-      And I press "Save"
-      Then I should see "Realtor was successfully created."
-      And I should have a page with a url_tag of "employees"
-
-    Scenario: Custom URL Tag
-      Given I have no realtors
-      And I am logged in as "admin"
-      And I am on the admin list of realtors
-      When I follow "New Realtor"
-      And I fill in "page[title]" with "Employees"
-      And I fill in "page[content]" with "<p>Our employees</p>"
-      And I fill in "page[title]" with "our-team"
-      And I press "Save"
-      Then I should see "Realtor was successfully created."
-      And I should have a page with a url_tag of "our-team"
+   

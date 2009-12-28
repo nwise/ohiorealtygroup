@@ -1,12 +1,5 @@
 <h1>Editing realtor</h1>
 
-<% form_for(@realtor) do |f| %>
-  <%= f.error_messages %>
+<%= render :partial => 'form' %>
 
-  <p>
-    <%= f.submit 'Update' %>
-  </p>
-<% end %>
-
-<%= link_to 'Show', @realtor %> |
-<%= link_to 'Back', realtors_path %>
+<%= link_to 'Back', admin_realtors_path %>

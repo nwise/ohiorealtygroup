@@ -1,11 +1,4 @@
 <h1>New realtor</h1>
+  <%= render :partial => 'form' %>
 
-<% form_for(@realtor) do |f| %>
-  <%= f.error_messages %>
-
-  <p>
-    <%= f.submit 'Create' %>
-  </p>
-<% end %>
-
-<%= link_to 'Back', realtors_path %>
+<%= link_to 'Back', admin_realtors_path %>

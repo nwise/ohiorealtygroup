@@ -45,7 +45,7 @@ class Admin::RealtorsController < ApplicationController
     respond_to do |format|
       if @realtor.save
         flash[:notice] = 'Realtor was successfully created.'
-        format.html { redirect_to(@realtor) }
+        format.html { redirect_to(admin_realtors_url) }
         format.xml  { render :xml => @realtor, :status => :created, :location => @realtor }
       else
         format.html { render :action => "new" }
@@ -62,7 +62,7 @@ class Admin::RealtorsController < ApplicationController
     respond_to do |format|
       if @realtor.update_attributes(params[:realtor])
         flash[:notice] = 'Realtor was successfully updated.'
-        format.html { redirect_to(@realtor) }
+        format.html { redirect_to(admin_realtors_url) }
         format.xml  { head :ok }
       else
         format.html { render :action => "edit" }
