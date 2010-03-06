@@ -27,6 +27,6 @@ config.action_view.cache_template_loading            = true
 # Enable threaded mode
 # config.threadsafe!
 
-CONTACT_FORM_RECIPIENT = 'testing@wrladv.com'
+CONTACT_FORM_RECIPIENT = 'phil@pjmarch.com'
 
 GA_JS = ''
