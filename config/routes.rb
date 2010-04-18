@@ -9,6 +9,7 @@ ActionController::Routing::Routes.draw do |map|
   map.admin 'admin', :controller => 'admin/pages', :action => 'index'
 
   map.connect 'contact-us', :controller => 'contact', :action => "contact_us"
+  map.connect 'our-realtors', :controller => 'realtors'
 
   map.resources :pages, :menu_items
 

@@ -1,0 +1,29 @@
+<h1 align="center"> 
+	Meet Our Award Winning Team&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+</h1> 
+<p align="center"> 
+	(Click Link for Bio Information, Email and Web Site)
+</p>
+
+<table cellpadding="5" class="highlight" width="" height="">
+	<tr>
+		<th class='hlt' style="border-style: solid; border-width: 1px" width="176" height="59">Agent Name</th>
+		<th class='hlt' style="border-style: solid; border-width: 1px" width="99" height="59">Telephone</th>
+		<th class='hlt' width="124" nowrap style="border-style: solid; border-width: 1px" height="59">Cell Phone and/or Voice Mail</th>
+		<th class='hlt' width="226" style="border-style: solid; border-width: 1px" height="59">Email</th>
+		<th class='hlt' style="border-left-style: solid; border-left-width: 1px; border-top-style: solid;
+                                        border-top-width: 1px; border-bottom-style: solid; border-bottom-width: 1px" width="194" height="59">Web Site</th>		
+	</tr>
+	<% @realtors.each do |realtor| %>
+	<tr>
+		<td class="hlb">
+			<p><strong><%= realtor.name %></strong><br /><br />
+			<%= link_to("Bio Link", realtor.bio_link) %></p>
+		</td>
+		<td class="hlb"><%=h realtor.phone_number %></td>
+		<td class="hlb"><%=h realtor.cell_number %></td>
+		<td class="hlb"><%= mail_to realtor.email, "Send Email", {:encode => 'hex'} %>
+		<td class="hlb"><%= link_to realtor.website, realtor.website %></td>
+	</tr>	
+	<% end %>	
+</table>
