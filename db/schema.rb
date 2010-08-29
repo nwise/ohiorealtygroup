@@ -9,7 +9,7 @@
 #
 # It's strongly recommended to check this file into your version control system.
 
-ActiveRecord::Schema.define(:version => 20091204021450) do
+ActiveRecord::Schema.define(:version => 20100829222345) do
 
   create_table "four_oh_fours", :force => true do |t|
     t.string   "host"
@@ -72,6 +72,7 @@ ActiveRecord::Schema.define(:version => 20091204021450) do
     t.string   "url_tag"
     t.datetime "created_at"
     t.datetime "updated_at"
+    t.integer  "position"
   end
 
   create_table "rights", :force => true do |t|

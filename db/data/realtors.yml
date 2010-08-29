@@ -1,5 +1,6 @@
 --- 
 realtors_000017: 
+  position: "17"
   name: Patti Scherer, Realtor
   created_at: 2010-08-29 21:42:19
   voicemail_number: 330-296-9000 Ext. 320
@@ -12,6 +13,7 @@ realtors_000017:
   bio_link: http://mls.neohrex.com/scripts/mgrqispi.dll?APPNAME=neohrex&PRGNAME=MLSListingAgentDetail&ARGUMENTS=-N000390635,-N156771611
   email: Patti@OhioRealtyGroup.com
 realtors_000006: 
+  position: "6"
   name: Mary Carr, Realtor
   created_at: 2010-08-29 21:26:38
   voicemail_number: 330-296-9000 Ext. 318
@@ -24,6 +26,7 @@ realtors_000006:
   bio_link: http://mls.neohrex.com/scripts/mgrqispi.dll?APPNAME=neohrex&PRGNAME=MLSListingAgentDetail&ARGUMENTS=-N000000550,-N156771611
   email: MaryCarr44201@Yahoo.com
 realtors_000018: 
+  position: "18"
   name: Sarah Taylor, Realtor, ABR, GRI
   created_at: 2010-08-29 21:43:44
   voicemail_number: 330-296-9000 Ext. 310
@@ -36,6 +39,7 @@ realtors_000018:
   bio_link: http://mls.neohrex.com/scripts/mgrqispi.dll?APPNAME=neohrex&PRGNAME=MLSListingAgentDetail&ARGUMENTS=-N200201531,-N156771611
   email: sarah@ohiorealtygroup.com
 realtors_000007: 
+  position: "7"
   name: Anna Ciano-Hendricks, Realtor
   created_at: 2010-08-29 21:27:58
   voicemail_number: "330-296-9000 Ext. 411 "
@@ -48,6 +52,7 @@ realtors_000007:
   bio_link: http://mls.neohrex.com/scripts/mgrqispi.dll?APPNAME=neohrex&PRGNAME=MLSListingAgentDetail&ARGUMENTS=-N020090008,-N156771611
   email: AnnaCiano77@Hotmail.com
 realtors_000019: 
+  position: "19"
   name: Tim Reedy,  Realtor
   created_at: 2010-08-29 21:44:53
   voicemail_number: 330-296-9000  Ext. 419
@@ -60,6 +65,7 @@ realtors_000019:
   bio_link: http://mls.neohrex.com/scripts/mgrqispi.dll?APPNAME=neohrex&PRGNAME=MLSListingAgentDetail&ARGUMENTS=-N000001583,-N156771611
   email: Tim@OhioRealtygroup.com
 realtors_000008: 
+  position: "8"
   name: Randi Clites, Realtor
   created_at: 2010-08-29 21:30:10
   voicemail_number: 330-296-9000 Ext. 314
@@ -72,6 +78,7 @@ realtors_000008:
   bio_link: http://mls.neohrex.com/scripts/mgrqispi.dll?APPNAME=neohrex&PRGNAME=MLSListingAgentDetail&ARGUMENTS=-N000001122,-N156771611
   email: RandiC@OhioRealtyGroup.com
 realtors_000020: 
+  position: "20"
   name: Helen Weingart,  Realtor
   created_at: 2010-08-29 21:46:57
   voicemail_number: 330-296-9000  Ext. 315
@@ -84,6 +91,7 @@ realtors_000020:
   bio_link: http://mls.neohrex.com/scripts/mgrqispi.dll?APPNAME=neohrex&PRGNAME=MLSListingAgentDetail&ARGUMENTS=-N000381837,-N156771611
   email: HWeingart@neo.rr.com
 realtors_000009: 
+  position: "9"
   name: Lynn Gealy-Barber, Realtor
   created_at: 2010-08-29 21:31:48
   voicemail_number: 330-296-9000 Ext. 405
@@ -96,6 +104,7 @@ realtors_000009:
   bio_link: http://mls.neohrex.com/scripts/mgrqispi.dll?APPNAME=neohrex&PRGNAME=MLSListingAgentDetail&ARGUMENTS=-N200600178,-N156771611
   email: LGealy.Bar@Hotmail.com
 realtors_000010: 
+  position: "10"
   name: Eric C. Hellekson,  Realtor, ABR, CSP
   created_at: 2010-08-29 21:33:33
   voicemail_number: 330-296-9000  Ext. 316
@@ -108,6 +117,7 @@ realtors_000010:
   bio_link: http://mls.neohrex.com/scripts/mgrqispi.dll?APPNAME=neohrex&PRGNAME=MLSListingAgentDetail&ARGUMENTS=-N000447395,-N156771611
   email: EricHellekson@aol.com
 realtors_000011: 
+  position: "11"
   name: Tammy J. Hippert,  Realtor
   created_at: 2010-08-29 21:34:38
   voicemail_number: 330-296-9000  Ext. 409
@@ -120,6 +130,7 @@ realtors_000011:
   bio_link: http://mls.neohrex.com/scripts/mgrqispi.dll?APPNAME=neohrex&PRGNAME=MLSListingAgentDetail&ARGUMENTS=-N200000879,-N156771611
   email: tammyhcent21@aol.com
 realtors_000012: 
+  position: "12"
   name: Frank T. Polichena, Realtor
   created_at: 2010-08-29 21:35:51
   voicemail_number: 330-296-9000 Ext. 418
@@ -132,6 +143,7 @@ realtors_000012:
   bio_link: http://mls.neohrex.com/scripts/mgrqispi.dll?APPNAME=neohrex&PRGNAME=MLSListingAgentDetail&ARGUMENTS=-N000332769,-N156771611http://mls.neohrex.com/scripts/mgrqispi.dll?APPNAME=neohrex&PRGNAME=MLSListingAgentDetail&ARGUMENTS=-N000332769,-N156771611
   email: FrankT@OhioRealtyGroup.com
 realtors_000001: 
+  position: "1"
   name: Philip J. March
   created_at: 2009-12-28 21:50:23
   voicemail_number: 330-296-9000 ext. 301
@@ -144,6 +156,7 @@ realtors_000001:
   bio_link: http://mls.neohrex.com/scripts/mgrqispi.dll?APPNAME=neohrex&PRGNAME=MLSListingAgentDetail&ARGUMENTS=-N000000693,-N156771611
   email: Phil@PJMarch.com
 realtors_000013: 
+  position: "13"
   name: Kelly Postlethwaite,  Realtor
   created_at: 2010-08-29 21:37:18
   voicemail_number: 330-296-9000  Ext. 407
@@ -156,6 +169,7 @@ realtors_000013:
   bio_link: http://mls.neohrex.com/scripts/mgrqispi.dll?APPNAME=neohrex&PRGNAME=MLSListingAgentDetail&ARGUMENTS=-N000001506,-N156771611
   email: klprealtor@neo.rr.com
 realtors_000002: 
+  position: "2"
   name: Susan M. Blazek
   created_at: 2010-03-04 20:27:10
   voicemail_number: 330-296-9000 Ext. 302
@@ -168,6 +182,7 @@ realtors_000002:
   bio_link: http://mls.neohrex.com/scripts/mgrqispi.dll?APPNAME=neohrex&PRGNAME=MLSListingAgentDetail&ARGUMENTS=-N000438703,-N156771611
   email: SMBlazekORG@aol.com
 realtors_000014: 
+  position: "14"
   name: Don Reckner,  Realtor
   created_at: 2010-08-29 21:38:29
   voicemail_number: 330-296-9000  Ext. 415
@@ -180,6 +195,7 @@ realtors_000014:
   bio_link: http://mls.neohrex.com/scripts/mgrqispi.dll?APPNAME=neohrex&PRGNAME=MLSListingAgentDetail&ARGUMENTS=-N200101383,-N156771611
   email: dreckner@aol.com
 realtors_000003: 
+  position: "3"
   name: Michael Bukovac, Realtor
   created_at: 2010-08-29 21:16:43
   voicemail_number: 330-296-9000 Ext. 303
@@ -192,6 +208,7 @@ realtors_000003:
   bio_link: http://mls.neohrex.com/scripts/mgrqispi.dll?APPNAME=neohrex&PRGNAME=MLSListingAgentDetail&ARGUMENTS=-N000445007,-N156771611
   email: MikeBukovac@yahoo.com
 realtors_000015: 
+  position: "15"
   name: Jeremy Roosa,  Realtor
   created_at: 2010-08-29 21:39:32
   voicemail_number: 330-296-9000  Ext. 307
@@ -204,6 +221,7 @@ realtors_000015:
   bio_link: http://mls.neohrex.com/scripts/mgrqispi.dll?APPNAME=neohrex&PRGNAME=MLSListingAgentDetail&ARGUMENTS=-N200101383,-N156771611
   email: jroo72@yahoo.com
 realtors_000004: 
+  position: "4"
   name: Clara Alden, Realtor, CSP, e-PRO
   created_at: 2010-08-29 21:19:11
   voicemail_number: "330-296-9000 Ext. 317 "
@@ -216,6 +234,7 @@ realtors_000004:
   bio_link: http://mls.neohrex.com/scripts/mgrqispi.dll?APPNAME=neohrex&PRGNAME=MLSListingAgentDetail&ARGUMENTS=-N200401533,-N855975890
   email: calden@portagecountyhomes.com
 realtors_000016: 
+  position: "16"
   name: Tessa Samblanet, Realtor
   created_at: 2010-08-29 21:40:54
   voicemail_number: 330-296-9000 Ext. 412
@@ -228,6 +247,7 @@ realtors_000016:
   bio_link: http://mls.neohrex.com/scripts/mgrqispi.dll?APPNAME=neohrex&PRGNAME=MLSListingAgentDetail&ARGUMENTS=-N200301788,-N156771611
   email: TessaSellsHomes@aol.com
 realtors_000005: 
+  position: "5"
   name: Diane Burrows, Realtor
   created_at: 2010-08-29 21:25:39
   voicemail_number: "330-296-9000 Ext. 319 "
