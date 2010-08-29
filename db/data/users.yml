@@ -1,18 +1,18 @@
 --- 
 users_000001: 
   created_at: 2010-07-23 00:34:42
-  last_request_at: 2010-07-23 00:35:00
-  crypted_password: 055cfe702dcfc37cde54a26ee72218a257c763c7e8f7ac3aaa1fed5a263e2da68dfe5cab461a0e6fcd7ab1d783483784c342f7a68ed56ea1672c258d073c5519
-  updated_at: 2010-07-23 00:35:00
-  perishable_token: H6p7xm-OvuNC1B7UlFg3
+  last_request_at: 2010-08-29 20:55:40
+  crypted_password: 976896d709b6e3270e141de51705c5c5fdfd469611525624b6c1a0ce3497b87532be1a67cf5ff7247a63a3410f58b8611ff7cf83379fcfbb845b8ed9e21c687c
+  updated_at: 2010-08-29 20:55:40
+  perishable_token: PlX72zDHNLzrrQf2WpTk
   username: nathanwise@gmail.com
   current_login_ip: 127.0.0.1
   failed_login_count: "0"
   id: "1"
-  current_login_at: 2010-07-23 00:35:00
-  password_salt: PCx1itKA76ctLF-z8iN9
-  login_count: "1"
-  persistence_token: 254b3831953c0e04789ff62c775e04b6aabe534603dc8211ff2a714882a5b52861ac52119a3d7d5c9838cde13405fa034c7a0d71ede13919bdac2ec0996ffe0b
-  last_login_ip: 
-  last_login_at: 
+  current_login_at: 2010-08-29 20:52:11
+  password_salt: 0kGGnwLYKAtpQjT7-Yf9
+  login_count: "2"
+  persistence_token: 21974b9d71ff442d1063df462e554adad518dc0586002822b1000fd1196e7dd104220b78149790f4bc3819f448df287aaef0778d69e14b0557d901dc59d6f982
+  last_login_ip: 127.0.0.1
+  last_login_at: 2010-07-23 00:35:00
   email: nathanwise@gmail.com

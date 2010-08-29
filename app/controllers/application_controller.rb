@@ -36,7 +36,7 @@ class ApplicationController < ActionController::Base
       redirect_to login_url
       return false
     end
-    check_authorization
+    #check_authorization
   end
 
   def check_authorization

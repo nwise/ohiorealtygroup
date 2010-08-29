@@ -1,4 +1,5 @@
 class Admin::RealtorsController < ApplicationController
+  before_filter :check_authentication
   # GET /realtors
   # GET /realtors.xml
   def index

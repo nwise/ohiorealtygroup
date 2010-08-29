@@ -1,4 +1,5 @@
 class Admin::MenuItemsController < ApplicationController
+  before_filter :check_authentication
   # GET /menu_items  
   def index
     @menu_items = MenuItem.find(:all, :conditions => 'parent_id IS NULL')

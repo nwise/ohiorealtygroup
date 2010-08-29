@@ -12,7 +12,7 @@
 		<th class='hlt' width="124" nowrap style="border-style: solid; border-width: 1px" height="59">Cell Phone and/or Voice Mail</th>
 		<th class='hlt' width="226" style="border-style: solid; border-width: 1px" height="59">Email</th>
 		<th class='hlt' style="border-left-style: solid; border-left-width: 1px; border-top-style: solid;
-                                        border-top-width: 1px; border-bottom-style: solid; border-bottom-width: 1px" width="194" height="59">Web Site</th>		
+                           border-top-width: 1px; border-bottom-style: solid; border-bottom-width: 1px" width="194" height="59">Web Site</th>		
 	</tr>
 	<% @realtors.each do |realtor| %>
 	<tr>
@@ -21,7 +21,7 @@
 			<%= link_to("Bio Link", realtor.bio_link) %></p>
 		</td>
 		<td class="hlb"><%=h realtor.phone_number %></td>
-		<td class="hlb"><%=h realtor.cell_number %></td>
+		<td class="hlb"><%=h realtor.cell_number %>(cell)<br /><br /><%=h realtor.voicemail_number %>(VM)</td>
 		<td class="hlb"><%= mail_to realtor.email, "Send Email", {:encode => 'hex'} %>
 		<td class="hlb"><%= link_to realtor.website, realtor.website %></td>
 	</tr>	
