@@ -1,18 +1,18 @@
 --- 
 users_000001: 
   created_at: 2010-07-23 00:34:42
-  last_request_at: 2010-08-29 20:55:40
+  last_request_at: 2010-08-29 21:47:26
   crypted_password: 976896d709b6e3270e141de51705c5c5fdfd469611525624b6c1a0ce3497b87532be1a67cf5ff7247a63a3410f58b8611ff7cf83379fcfbb845b8ed9e21c687c
-  updated_at: 2010-08-29 20:55:40
-  perishable_token: PlX72zDHNLzrrQf2WpTk
+  updated_at: 2010-08-29 21:47:26
+  perishable_token: zUfqa0oheL8FtndlywyY
   username: nathanwise@gmail.com
   current_login_ip: 127.0.0.1
   failed_login_count: "0"
   id: "1"
-  current_login_at: 2010-08-29 20:52:11
+  current_login_at: 2010-08-29 21:14:09
   password_salt: 0kGGnwLYKAtpQjT7-Yf9
-  login_count: "2"
+  login_count: "3"
   persistence_token: 21974b9d71ff442d1063df462e554adad518dc0586002822b1000fd1196e7dd104220b78149790f4bc3819f448df287aaef0778d69e14b0557d901dc59d6f982
   last_login_ip: 127.0.0.1
-  last_login_at: 2010-07-23 00:35:00
+  last_login_at: 2010-08-29 20:52:11
   email: nathanwise@gmail.com

@@ -1,25 +1,241 @@
 --- 
+realtors_000017: 
+  name: Patti Scherer, Realtor
+  created_at: 2010-08-29 21:42:19
+  voicemail_number: 330-296-9000 Ext. 320
+  updated_at: 2010-08-29 21:47:26
+  url_tag: patti-scherer
+  id: "19"
+  phone_number: 330-296-9000
+  website: ""
+  cell_number: 330-606-0336
+  bio_link: http://mls.neohrex.com/scripts/mgrqispi.dll?APPNAME=neohrex&PRGNAME=MLSListingAgentDetail&ARGUMENTS=-N000390635,-N156771611
+  email: Patti@OhioRealtyGroup.com
+realtors_000006: 
+  name: Mary Carr, Realtor
+  created_at: 2010-08-29 21:26:38
+  voicemail_number: 330-296-9000 Ext. 318
+  updated_at: 2010-08-29 21:28:41
+  url_tag: mary-carr
+  id: "8"
+  phone_number: 330-296-9000
+  website: ""
+  cell_number: 330-606-8920
+  bio_link: http://mls.neohrex.com/scripts/mgrqispi.dll?APPNAME=neohrex&PRGNAME=MLSListingAgentDetail&ARGUMENTS=-N000000550,-N156771611
+  email: MaryCarr44201@Yahoo.com
+realtors_000018: 
+  name: Sarah Taylor, Realtor, ABR, GRI
+  created_at: 2010-08-29 21:43:44
+  voicemail_number: 330-296-9000 Ext. 310
+  updated_at: 2010-08-29 21:43:44
+  url_tag: sarah-taylor
+  id: "20"
+  phone_number: 330-296-9000
+  website: ""
+  cell_number: 330-524-2112
+  bio_link: http://mls.neohrex.com/scripts/mgrqispi.dll?APPNAME=neohrex&PRGNAME=MLSListingAgentDetail&ARGUMENTS=-N200201531,-N156771611
+  email: sarah@ohiorealtygroup.com
+realtors_000007: 
+  name: Anna Ciano-Hendricks, Realtor
+  created_at: 2010-08-29 21:27:58
+  voicemail_number: "330-296-9000 Ext. 411 "
+  updated_at: 2010-08-29 21:27:58
+  url_tag: anna-ciano
+  id: "9"
+  phone_number: 330-296-9000
+  website: ""
+  cell_number: 330-352-6750
+  bio_link: http://mls.neohrex.com/scripts/mgrqispi.dll?APPNAME=neohrex&PRGNAME=MLSListingAgentDetail&ARGUMENTS=-N020090008,-N156771611
+  email: AnnaCiano77@Hotmail.com
+realtors_000019: 
+  name: Tim Reedy,  Realtor
+  created_at: 2010-08-29 21:44:53
+  voicemail_number: 330-296-9000  Ext. 419
+  updated_at: 2010-08-29 21:44:53
+  url_tag: tim-reedy
+  id: "21"
+  phone_number: 330-296- 7037
+  website: ""
+  cell_number: 330-221-3836
+  bio_link: http://mls.neohrex.com/scripts/mgrqispi.dll?APPNAME=neohrex&PRGNAME=MLSListingAgentDetail&ARGUMENTS=-N000001583,-N156771611
+  email: Tim@OhioRealtygroup.com
+realtors_000008: 
+  name: Randi Clites, Realtor
+  created_at: 2010-08-29 21:30:10
+  voicemail_number: 330-296-9000 Ext. 314
+  updated_at: 2010-08-29 21:30:10
+  url_tag: randi-clites
+  id: "10"
+  phone_number: 330-296-9000
+  website: ""
+  cell_number: 330-730-1259
+  bio_link: http://mls.neohrex.com/scripts/mgrqispi.dll?APPNAME=neohrex&PRGNAME=MLSListingAgentDetail&ARGUMENTS=-N000001122,-N156771611
+  email: RandiC@OhioRealtyGroup.com
+realtors_000020: 
+  name: Helen Weingart,  Realtor
+  created_at: 2010-08-29 21:46:57
+  voicemail_number: 330-296-9000  Ext. 315
+  updated_at: 2010-08-29 21:46:57
+  url_tag: helen-weingart
+  id: "22"
+  phone_number: 330-673-4798
+  website: ""
+  cell_number: 330-221-3515
+  bio_link: http://mls.neohrex.com/scripts/mgrqispi.dll?APPNAME=neohrex&PRGNAME=MLSListingAgentDetail&ARGUMENTS=-N000381837,-N156771611
+  email: HWeingart@neo.rr.com
+realtors_000009: 
+  name: Lynn Gealy-Barber, Realtor
+  created_at: 2010-08-29 21:31:48
+  voicemail_number: 330-296-9000 Ext. 405
+  updated_at: 2010-08-29 21:31:48
+  url_tag: lynn-gealy-barber
+  id: "11"
+  phone_number: 330-296-9000
+  website: ""
+  cell_number: 330-307-3762
+  bio_link: http://mls.neohrex.com/scripts/mgrqispi.dll?APPNAME=neohrex&PRGNAME=MLSListingAgentDetail&ARGUMENTS=-N200600178,-N156771611
+  email: LGealy.Bar@Hotmail.com
+realtors_000010: 
+  name: Eric C. Hellekson,  Realtor, ABR, CSP
+  created_at: 2010-08-29 21:33:33
+  voicemail_number: 330-296-9000  Ext. 316
+  updated_at: 2010-08-29 21:33:33
+  url_tag: eric-hellekson
+  id: "12"
+  phone_number: 330-296-9000
+  website: www.EricHellekson.com
+  cell_number: 330-221-0919
+  bio_link: http://mls.neohrex.com/scripts/mgrqispi.dll?APPNAME=neohrex&PRGNAME=MLSListingAgentDetail&ARGUMENTS=-N000447395,-N156771611
+  email: EricHellekson@aol.com
+realtors_000011: 
+  name: Tammy J. Hippert,  Realtor
+  created_at: 2010-08-29 21:34:38
+  voicemail_number: 330-296-9000  Ext. 409
+  updated_at: 2010-08-29 21:34:38
+  url_tag: tammy-hippert
+  id: "13"
+  phone_number: 330-296- 9000
+  website: ""
+  cell_number: 330-310-798
+  bio_link: http://mls.neohrex.com/scripts/mgrqispi.dll?APPNAME=neohrex&PRGNAME=MLSListingAgentDetail&ARGUMENTS=-N200000879,-N156771611
+  email: tammyhcent21@aol.com
+realtors_000012: 
+  name: Frank T. Polichena, Realtor
+  created_at: 2010-08-29 21:35:51
+  voicemail_number: 330-296-9000 Ext. 418
+  updated_at: 2010-08-29 21:35:51
+  url_tag: frank-polichena
+  id: "14"
+  phone_number: 330-296-9000
+  website: ""
+  cell_number: 330-687-9690
+  bio_link: http://mls.neohrex.com/scripts/mgrqispi.dll?APPNAME=neohrex&PRGNAME=MLSListingAgentDetail&ARGUMENTS=-N000332769,-N156771611http://mls.neohrex.com/scripts/mgrqispi.dll?APPNAME=neohrex&PRGNAME=MLSListingAgentDetail&ARGUMENTS=-N000332769,-N156771611
+  email: FrankT@OhioRealtyGroup.com
 realtors_000001: 
   name: Philip J. March
   created_at: 2009-12-28 21:50:23
   voicemail_number: 330-296-9000 ext. 301
-  updated_at: 2010-03-04 20:25:20
-  url_tag: ""
+  updated_at: 2010-08-29 21:20:54
+  url_tag: philip-march
   id: "3"
   phone_number: 330-296-0445
   website: www.PhilMarch.com
   cell_number: 330-221-6777
-  bio_link: ""
+  bio_link: http://mls.neohrex.com/scripts/mgrqispi.dll?APPNAME=neohrex&PRGNAME=MLSListingAgentDetail&ARGUMENTS=-N000000693,-N156771611
   email: Phil@PJMarch.com
+realtors_000013: 
+  name: Kelly Postlethwaite,  Realtor
+  created_at: 2010-08-29 21:37:18
+  voicemail_number: 330-296-9000  Ext. 407
+  updated_at: 2010-08-29 21:37:18
+  url_tag: kelly-postlethwaite
+  id: "15"
+  phone_number: 330-296- 9000
+  website: ""
+  cell_number: 330-221-3836
+  bio_link: http://mls.neohrex.com/scripts/mgrqispi.dll?APPNAME=neohrex&PRGNAME=MLSListingAgentDetail&ARGUMENTS=-N000001506,-N156771611
+  email: klprealtor@neo.rr.com
 realtors_000002: 
   name: Susan M. Blazek
   created_at: 2010-03-04 20:27:10
-  voicemail_number: ""
-  updated_at: 2010-03-04 20:27:10
-  url_tag: ""
+  voicemail_number: 330-296-9000 Ext. 302
+  updated_at: 2010-08-29 21:21:28
+  url_tag: susan-blazek
   id: "4"
   phone_number: 330-618-4532
   website: www.SusanBlazek.com
-  cell_number: ""
-  bio_link: ""
+  cell_number: 330-618-8473
+  bio_link: http://mls.neohrex.com/scripts/mgrqispi.dll?APPNAME=neohrex&PRGNAME=MLSListingAgentDetail&ARGUMENTS=-N000438703,-N156771611
   email: SMBlazekORG@aol.com
+realtors_000014: 
+  name: Don Reckner,  Realtor
+  created_at: 2010-08-29 21:38:29
+  voicemail_number: 330-296-9000  Ext. 415
+  updated_at: 2010-08-29 21:38:29
+  url_tag: don-reckner
+  id: "16"
+  phone_number: 30-296- 9000
+  website: ""
+  cell_number: 330-687-9690
+  bio_link: http://mls.neohrex.com/scripts/mgrqispi.dll?APPNAME=neohrex&PRGNAME=MLSListingAgentDetail&ARGUMENTS=-N200101383,-N156771611
+  email: dreckner@aol.com
+realtors_000003: 
+  name: Michael Bukovac, Realtor
+  created_at: 2010-08-29 21:16:43
+  voicemail_number: 330-296-9000 Ext. 303
+  updated_at: 2010-08-29 21:19:29
+  url_tag: michael-bukovac
+  id: "5"
+  phone_number: 330-678-4658
+  website: ""
+  cell_number: 330-388-2896
+  bio_link: http://mls.neohrex.com/scripts/mgrqispi.dll?APPNAME=neohrex&PRGNAME=MLSListingAgentDetail&ARGUMENTS=-N000445007,-N156771611
+  email: MikeBukovac@yahoo.com
+realtors_000015: 
+  name: Jeremy Roosa,  Realtor
+  created_at: 2010-08-29 21:39:32
+  voicemail_number: 330-296-9000  Ext. 307
+  updated_at: 2010-08-29 21:39:32
+  url_tag: jeremy-roosa
+  id: "17"
+  phone_number: 330-296- 9000
+  website: ""
+  cell_number: 330-221-4453
+  bio_link: http://mls.neohrex.com/scripts/mgrqispi.dll?APPNAME=neohrex&PRGNAME=MLSListingAgentDetail&ARGUMENTS=-N200101383,-N156771611
+  email: jroo72@yahoo.com
+realtors_000004: 
+  name: Clara Alden, Realtor, CSP, e-PRO
+  created_at: 2010-08-29 21:19:11
+  voicemail_number: "330-296-9000 Ext. 317 "
+  updated_at: 2010-08-29 21:19:11
+  url_tag: clara-alden
+  id: "6"
+  phone_number: 330-296-9000
+  website: www.portagecountyhomes.com
+  cell_number: 330-475-6056
+  bio_link: http://mls.neohrex.com/scripts/mgrqispi.dll?APPNAME=neohrex&PRGNAME=MLSListingAgentDetail&ARGUMENTS=-N200401533,-N855975890
+  email: calden@portagecountyhomes.com
+realtors_000016: 
+  name: Tessa Samblanet, Realtor
+  created_at: 2010-08-29 21:40:54
+  voicemail_number: 330-296-9000 Ext. 412
+  updated_at: 2010-08-29 21:40:54
+  url_tag: tessa-samblanet
+  id: "18"
+  phone_number: 330-296-9000
+  website: ""
+  cell_number: 330-603-6877
+  bio_link: http://mls.neohrex.com/scripts/mgrqispi.dll?APPNAME=neohrex&PRGNAME=MLSListingAgentDetail&ARGUMENTS=-N200301788,-N156771611
+  email: TessaSellsHomes@aol.com
+realtors_000005: 
+  name: Diane Burrows, Realtor
+  created_at: 2010-08-29 21:25:39
+  voicemail_number: "330-296-9000 Ext. 319 "
+  updated_at: 2010-08-29 21:25:39
+  url_tag: diane-burrows
+  id: "7"
+  phone_number: 330-296-9000
+  website: ""
+  cell_number: "330-621-6564 "
+  bio_link: http://mls.neohrex.com/scripts/mgrqispi.dll?APPNAME=neohrex&PRGNAME=MLSListingAgentDetail&ARGUMENTS=-N200800202,-N156771611
+  email: DianeLBurrows@GMail.com
