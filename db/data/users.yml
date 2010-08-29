@@ -16,3 +16,20 @@ users_000001:
   last_login_ip: 127.0.0.1
   last_login_at: 2010-08-29 20:52:11
   email: nathanwise@gmail.com
+users_000002: 
+  created_at: 2010-08-29 22:36:59
+  last_request_at: 
+  crypted_password: ffbd7840d5da203e207fd677c22c2603686347d17ba7bb024f08e7579266f9dd9ab7cf2b775ef92888906064ff5e90499bb815466ab48708e851f3bee9340550
+  updated_at: 2010-08-29 22:36:59
+  perishable_token: A7Hrd86ogAiuyofgyyce
+  username: phil@pjmarch.com
+  current_login_ip: 
+  failed_login_count: "0"
+  id: "2"
+  current_login_at: 
+  password_salt: 3vugW4BrZ_wAj9VTqEh-
+  login_count: "0"
+  persistence_token: 88f78fe411294b16e1b1436d20139d9d01b1aed4b116d4c2d78f0b8c7fd4bb4b9bbafa1445f7a5a31fa7b88ac3b7632fe2999c9c7a6ca906320e8e8ec364a8fd
+  last_login_ip: 
+  last_login_at: 
+  email: phil@pjmarch.com
