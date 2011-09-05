@@ -43,7 +43,7 @@ module ApplicationHelper
       # TODO add handling to partials for vertical and horizontal menus layouts
       menu = MenuItem.find_by_label(m)      
       if menu.nil?
-        render :nothing => ''
+        render :text => '' #:nothing => true
       end
       render :partial => "shared/menu_#{direction}", :locals => {:menu => menu, :id => id}
      end

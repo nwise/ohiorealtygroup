@@ -8,7 +8,7 @@ ActionController::Routing::Routes.draw do |map|
   map.logout 'logout', :controller => 'user_sessions', :action => 'destroy'
   map.admin 'admin', :controller => 'admin/pages', :action => 'index'
 
-  map.connect 'contact-us', :controller => 'contact', :action => "contact_us"
+  map.contact_us 'contact-us', :controller => 'contact', :action => "contact_us"
   map.connect 'our-realtors', :controller => 'realtors'
 
   map.resources :pages, :menu_items
@@ -26,11 +26,11 @@ ActionController::Routing::Routes.draw do |map|
     admin.resources :realtors
   end
 
-  map.root :controller => 'main', :action => 'content_page', :path => 'index'
 
   map.connect ':controller/:action/:id'
   map.connect ':controller/:action/:id.:format'
 
+  map.root :controller => 'main', :action => 'content_page', :path => 'index'
   #Remap old routes
   map.connect "main.asp", :controller => 'main', :action => 'content_page', :path => 'index'
   map.connect "contact.asp", :controller => 'contact', :action => 'contact_us'

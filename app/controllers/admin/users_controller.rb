@@ -1,6 +1,5 @@
 class Admin::UsersController < ApplicationController
   before_filter :check_authentication
-  filter_parameter_logging "password", "password_confirmation"
   # GET /admin/users
   # GET /admin/users.xml
   def index

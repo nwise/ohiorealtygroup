@@ -17,12 +17,12 @@ Feature: Contact Emails
     And I fill in "Email" with "nwise@wrladv.com"
     And I fill in "Company" with "WRL"
     And I press "Send"
-    Then I should see "Contact form has been sent."
+    Then I should see "Thank you for your interest."
     And I should receive an email notification
 
   Scenario: Fill out the contact-us form with invalid email address
     Given I am on the contact us form
-    When I fill in "Email" with "nwise@"
+    When I fill in "Email" with ""
     And I fill in "First Name" with "Jon"
     And I fill in "Last Name" with "Doe"
     And I fill in "Address" with "4470 Dressler Rd"
@@ -32,5 +32,5 @@ Feature: Contact Emails
     And I fill in "Phone" with "330.493.8749"    
     And I fill in "Company" with "WRL"
     And I press "Send"
-    Then I should see "does not appear to be a valid e-mail address"
+    Then I should see "Email address can't be blank"
     And I should not receive an email notification

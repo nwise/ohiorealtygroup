@@ -1,3 +1,4 @@
+=begin
 require File.expand_path(File.join(File.dirname(__FILE__), "..", "support", "paths"))
 
 # Commonly used webrat steps
@@ -113,3 +114,6 @@ end
 Then /^I should be on (.+)$/ do |page_name|
   URI.parse(current_url).path.should == path_to(page_name)
 end
+
+=end
+

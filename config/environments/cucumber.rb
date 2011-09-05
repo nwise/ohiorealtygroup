@@ -20,4 +20,4 @@ config.action_mailer.delivery_method = :test
 #config.gem "rspec",       :lib => false,        :version => ">=1.2.6"
 #config.gem "rspec-rails", :lib => 'spec/rails', :version => ">=1.2.6"
 #config.gem "factory_girl"
-
+CONTACT_FORM_RECIPIENT = 'nathanwise@gmail.com'

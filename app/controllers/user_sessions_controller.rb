@@ -1,5 +1,4 @@
 class UserSessionsController < ApplicationController
-  filter_parameter_logging "password"
   def new
     @user_session = UserSession.new
   end

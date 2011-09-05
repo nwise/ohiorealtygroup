@@ -8,8 +8,8 @@ class ContactController < ApplicationController
       @contact_us_form = ContactUsForm.new
     else
       if @contact_us_form.valid?
-        email = ContactMailer.deliver_contact_us_email(@contact_us_form)
-        flash[:note] = "Contact form has been sent."
+        message = ContactMailer.contact_us_email(@contact_us_form)
+        message.deliver
         redirect_to :action => :thank_you
       else
         render :action => :contact_us

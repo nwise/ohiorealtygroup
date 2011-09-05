@@ -1,6 +1,6 @@
 <div id="copy">
 
-<% form_for :contact_us_form, :url => {:action => :contact_us, :method => :post } do |f| %>
+<%= form_for :contact_us_form, :url => {:action => :contact_us, :method => :post } do |f| %>
 	<%= error_messages_for :contact_us_form %>
 <table class="contact_us_table">
      <%= render :partial => "common_fields", :locals =>{ :f => f } %>
