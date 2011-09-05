@@ -27,7 +27,7 @@ config.action_mailer.delivery_method = :test
 # like if you have constraints or database-specific column types
 # config.active_record.schema_format = :sql
 
-CONTACT_FORM_RECIPIENT = 'testing@wrladv.com'
+CONTACT_FORM_RECIPIENT = 'nathanwise@gmail.com'
 
 GA_JS = '<!--GA is only in production mode -->'
 
