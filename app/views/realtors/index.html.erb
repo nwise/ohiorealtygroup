@@ -23,7 +23,7 @@
 		<td class="hlb"><%=h realtor.phone_number %></td>
 		<td class="hlb"><%=h realtor.cell_number %>(cell)<br /><br /><%=h realtor.voicemail_number %>(VM)</td>
 		<td class="hlb"><%= mail_to realtor.email, "Send Email", {:encode => 'hex'} %>
-		<td class="hlb"><%= link_to realtor.website, realtor.website %></td>
+		<td class="hlb"><%= link_to realtor.website, "http://" + realtor.website %></td>
 	</tr>	
 	<% end %>	
 </table>
