@@ -3,4 +3,4 @@ log/development.log
 log/test.log
 log/*.log
 tmp/*
-nbproject/*
+tags
