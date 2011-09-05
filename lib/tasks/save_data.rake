@@ -1,9 +1,9 @@
 desc "Create data files from data in an existing database.
-Relies on RAILS_ENV to determine database."
+Relies on Rails.env to determine database."
 
 task :save_data => :environment do
   sql = "SELECT * FROM %s"
-  datadir = "#{RAILS_ROOT}/db/data"  
+  datadir = "#{Rails.root}/db/data"  
   skip_tables = [ 'schema_migrations' ]
   ActiveRecord::Base.establish_connection
   begin
