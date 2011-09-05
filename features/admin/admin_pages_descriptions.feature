@@ -74,7 +74,7 @@ Feature: Manage Pages
       Given I have a page titled Un1qu3
       And I am logged in as "admin"
       And I am on the admin list of pages
-      When I follow "destroy" for the Page "Un1qu3"
+      When I follow "destroy" for the Page "un1qu3"
       Then I should see "Page was successfully deleted."
       And I should not see "Un1qu3"
       
