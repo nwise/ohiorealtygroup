@@ -32,7 +32,7 @@ Feature: Manage Menu Items
     And I fill in "Path" with "about-us"
     And I press "Save"
     Then I should see "New menu item created."
-    And I should see "About Us"
+    And I should see "About Us" 
     And I should see "Main Menu"
 
   Scenario: Create a Menu Item for a Page

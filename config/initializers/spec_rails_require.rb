@@ -1,1 +1,1 @@
-require 'spec/rails'
+#require 'spec/rails'

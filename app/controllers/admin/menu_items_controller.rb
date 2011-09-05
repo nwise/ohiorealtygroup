@@ -32,13 +32,18 @@ class Admin::MenuItemsController < ApplicationController
   # POST /menu_items  
   def create
     begin
-      parent = MenuItem.find(params[:menu_item][:parent_id])
-      @menu_item = parent.children.new(params[:menu_item])
+      @parent = MenuItem.find(params[:menu_item][:parent_id])
+      @menu_item = @parent.children.new(params[:menu_item])
     rescue ActiveRecord::RecordNotFound => e
       @menu_item = MenuItem.new(params[:menu_item])
     end
     
     if @menu_item.save
+      if @parent
+        @menu_item.update_attributes(:parent_id => @parent.id)
+      else
+        @menu_item.update_attributes(:parent_id => nil) 
+      end
       flash[:notice] = 'New menu item created.'
       redirect_to :action => 'index'
     else

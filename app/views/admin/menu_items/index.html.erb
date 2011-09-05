@@ -5,7 +5,8 @@
   <li><%= "#{m.label.titleize}" %>
       <%= link_to(image_tag('admin_icons/add.png'), 
                   new_admin_menu_item_path(:parent_id => m.id),
-                  :id => "#{m.id}_add_child") %>
+                  :id => "#{m.id}_add_child",
+                  :title => 'add-child') %>
       <%= link_to(image_tag('admin_icons/edit.png'),
                   edit_admin_menu_item_path(m)) %>
       <%= link_to(image_tag('admin_icons/delete.png'), admin_menu_item_path(m),

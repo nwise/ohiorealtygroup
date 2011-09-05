@@ -32,6 +32,7 @@ end
 
 Given /^I am logged in as "(.*)"$/ do |username|
   #User is created in features/support/hooks.rb
+#  setup :activate_authlogic
   visit "/login"
   fill_in("username", :with => username)
   fill_in("password", :with => 'generic')

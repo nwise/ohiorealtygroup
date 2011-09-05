@@ -18,7 +18,8 @@ if Gem::VERSION >= "1.3.6"
 end
 
 Rails::Initializer.run do |config|
-#  config.gem "authlogic"
+  config.gem "authlogic"
+  
 #  config.gem 'will_paginate', :version => '~> 2.3.16'
 #  config.gem "searchlogic"
   # Settings in config/environments/* take precedence over those specified here.

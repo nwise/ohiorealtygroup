@@ -8,7 +8,6 @@ gem "searchlogic"
 gem 'pg'
 
 group :development, :test, :cucumber do
-  gem "authlogic"
   gem 'cucumber', '0.3.9'
   gem 'webrat', '0.4.4'
   gem 'rspec', '1.2.6', :require => 'spec'
@@ -17,5 +16,6 @@ group :development, :test, :cucumber do
   gem 'email_spec', '0.6.6'
   gem 'heroku', '1.17.10'
   gem "taps"
+  gem 'ruby-debug'
 end
 
