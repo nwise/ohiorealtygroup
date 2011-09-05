@@ -31,9 +31,10 @@ CONTACT_FORM_RECIPIENT = 'nathanwise@gmail.com'
 
 GA_JS = '<!--GA is only in production mode -->'
 
-config.gem "rspec", :lib => false, :version => ">=1.2.2"
-config.gem "rspec-rails", :lib => false, :version => ">=1.2.2"
-config.gem "webrat", :lib => false, :version => ">=0.4.3"
-config.gem "cucumber", :lib => false, :version => ">=0.3.0"
-config.gem "thoughtbot-factory_girl", :lib => "factory_girl", :source => "http://gems.github.com"
-config.gem 'bmabey-email_spec', :lib => 'email_spec', :source => "http://gems.github.com"
+#config.gem "rspec", :lib => false, :version => ">=1.2.2"
+#config.gem "rspec-rails", :lib => false, :version => ">=1.2.2"
+#config.gem "webrat", :lib => false, :version => ">=0.4.3"
+#config.gem "cucumber", :lib => false, :version => ">=0.3.0"
+#config.gem "factory_girl"
+#config.gem 'email_spec', :lib => 'email_spec', :source => "http://gems.github.com"
+

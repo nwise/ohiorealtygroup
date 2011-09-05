@@ -14,9 +14,10 @@ config.action_controller.allow_forgery_protection    = false
 # The :test delivery method accumulates sent emails in the
 # ActionMailer::Base.deliveries array.
 config.action_mailer.delivery_method = :test
-
-config.gem "cucumber",    :lib => false,        :version => ">=0.3.9"
-config.gem "webrat",      :lib => false,        :version => ">=0.4.4"
-config.gem "rspec",       :lib => false,        :version => ">=1.2.6"
-config.gem "rspec-rails", :lib => 'spec/rails', :version => ">=1.2.6"
+#config.gem "authlogic"
+#config.gem "cucumber",    :lib => false,        :version => ">=0.3.9"
+#config.gem "webrat",      :lib => false,        :version => ">=0.4.4"
+#config.gem "rspec",       :lib => false,        :version => ">=1.2.6"
+#config.gem "rspec-rails", :lib => 'spec/rails', :version => ">=1.2.6"
+#config.gem "factory_girl"
 
