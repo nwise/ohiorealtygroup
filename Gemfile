@@ -1,6 +1,6 @@
 source 'http://rubygems.org'
 
-gem 'rails', '2.3.5'
+gem 'rails', '3.0.6'
 gem "authlogic"
 gem 'will_paginate', "2.3.16"
 gem "searchlogic"
