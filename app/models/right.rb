@@ -1,3 +1,3 @@
 class Right < ActiveRecord::Base  
-  has_and_belongs_to_many :roles
+  has_many :roles, :through => :rights_roles
 end

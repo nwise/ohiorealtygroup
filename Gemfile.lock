@@ -1,3 +1,16 @@
+GIT
+  remote: git://github.com/rails/prototype_legacy_helper.git
+  revision: a2cd95c3e3c1a4f7a9566efdab5ce59c886cb05f
+  specs:
+    prototype_legacy_helper (0.0.0)
+
+GIT
+  remote: git://github.com/railsware/authlogic.git
+  revision: 4be0a3e6b642aa917f7d701165f4765248be8713
+  specs:
+    authlogic (2.1.6)
+      activesupport
+
 GEM
   remote: http://rubygems.org/
   specs:
@@ -30,8 +43,6 @@ GEM
     activesupport (3.0.6)
     addressable (2.2.6)
     arel (2.0.10)
-    authlogic (2.1.6)
-      activesupport
     builder (2.1.2)
     capybara (1.1.1)
       mime-types (>= 1.16)
@@ -163,7 +174,7 @@ PLATFORMS
   ruby
 
 DEPENDENCIES
-  authlogic
+  authlogic!
   capybara
   cucumber
   cucumber-rails
@@ -172,6 +183,7 @@ DEPENDENCIES
   factory_girl
   heroku
   pg
+  prototype_legacy_helper (= 0.0.0)!
   rails (= 3.0.6)
   rspec
   rspec-rails

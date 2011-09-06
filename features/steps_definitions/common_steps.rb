@@ -33,12 +33,12 @@ end
 Given /^I am logged in as "(.*)"$/ do |username|
   #User is created in features/support/hooks.rb
 #  setup :activate_authlogic
-  visit "/login"
-  fill_in("username", :with => username)
-  fill_in("password", :with => 'generic')
+  visit login_path
+  fill_in("Username", :with => username)
+  fill_in("Password", :with => 'generic')
   click_button("Log in")
 
-  response.body.should =~ /logged/m
+  page.should have_content('logged')
 end
 
 When /^dump the page$/ do

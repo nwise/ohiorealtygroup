@@ -12,11 +12,11 @@ module NavigationHelpers
       '/'
     
     when /the admin list of pages/
-      'admin/pages'
+      admin_pages_path
     when /the admin list of realtors/
-      'admin/realtors'
+      admin_realtors_path
     when /the admin list of MenuItems/
-      'admin/menu_items'
+      admin_menu_items_path
     when /the contact us form/
       contact_us_path
 # Add more mappings here.

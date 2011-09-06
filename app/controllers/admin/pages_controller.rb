@@ -5,7 +5,7 @@ class Admin::PagesController < ApplicationController
   def index
     field = params[:field]
     direction = params[:direction]
-    @pages = Page.sort(field, direction).paginate :page => params[:page], :per_page => 10, :order => 'title ASC'
+    @pages = Page.paginate :page => params[:page], :per_page => 10, :order => 'title ASC'
     @page = Page.new    
   end
 
