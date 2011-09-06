@@ -3,7 +3,7 @@ class Admin::RealtorsController < ApplicationController
   # GET /realtors
   # GET /realtors.xml
   def index
-    @realtors = Realtor.all.paginate :page => params[:page], :per_page => 10, :order => 'name ASC'
+    @realtors = Realtor.all
 
     respond_to do |format|
       format.html # index.html.erb

@@ -17,11 +17,11 @@ Given /^there are (\d+) (.+)$/ do |n, model_str|
 end
 
 Then /^I should see (\d+) "([^\"]*)"$/ do |n, object|
-  response.should have_selector("#{object}", :count => n.to_i)
+  page.should have_selector("#{object}", :count => n.to_i)
 end
 
 Then /^I should see the pagination$/ do
-  response.should have_selector("div.pagination", :count => 1)
+  page.should have_selector("div.pagination", :count => 1)
 end
 
 Then /^I should have a (.+) with a (.+) of "([^\"]*)"$/ do |object, attribute, value|

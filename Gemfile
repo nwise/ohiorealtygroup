@@ -7,6 +7,7 @@ gem 'will_paginate', "3.0"
 #gem 'postgres', '0.7.9.2008.01.28'
 gem 'pg'
 gem 'prototype_legacy_helper', '0.0.0', :git => 'git://github.com/rails/prototype_legacy_helper.git'
+gem 'acts_as_versioned'
 
 group :development, :test, :cucumber do
   gem 'cucumber'

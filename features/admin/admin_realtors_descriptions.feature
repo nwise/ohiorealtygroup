@@ -14,8 +14,7 @@ Feature: Manage Realtors
       Given there are 20 realtors
       And I am logged in as "admin"
       When I go to the admin list of realtors
-      Then I should see 10 "tr.admin_table_row"
-      And I should see the pagination
+      Then I should see 20 "tr.admin_table_row"
 
     Scenario: Create Valid Realtor
       Given I have no realtors
