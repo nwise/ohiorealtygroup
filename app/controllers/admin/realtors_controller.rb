@@ -1,4 +1,4 @@
-class Admin::RealtorsController < ApplicationController
+class Admin::RealtorsController < AdminController
   before_filter :check_authentication
   # GET /realtors
   # GET /realtors.xml

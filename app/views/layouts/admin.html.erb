@@ -1,0 +1,50 @@
+<!DOCTYPE HTML>
+<html>
+<head>
+<meta http-equiv="Content-Type" content="text/html; charset=utf-8">
+<title>Ohio Realty Group</title>
+<%= stylesheet_link_tag "bootstrap.css", "admin" %>
+<script type="text/javascript">
+    var CKEDITOR_BASEPATH = '/assets/ckeditor/';
+</script>
+<%= javascript_include_tag "application" %>
+</head>
+<body style='padding-top:50px'>
+  <div class="navbar navbar-fixed-top">
+    <div class="navbar-inner">
+      <div class="container">
+        <a class="btn btn-navbar" data-toggle="collapse" data-target=".nav-collapse">
+          <span class="icon-bar"></span>
+          <span class="icon-bar"></span>
+          <span class="icon-bar"></span>
+        </a>
+        <%= link_to "Ohio Realty Group Site Admin", root_url, :class => 'brand' %>
+        <% if current_user %>
+          <% if current_user.is_admin? %>
+          <div class="nav-collapse">
+            <ul class="nav">
+              <li class="">
+                <%= link_to "Pages", admin_pages_url %>
+              </li>
+              <li class="">
+                <%= link_to "Menu", admin_menu_items_url %>
+              </li>
+							<li class="">
+                <%= link_to "Realtors", admin_realtors_url %>
+              </li>
+              <li class="">
+                <%#= link_to "Users", admin_users_url %>
+              </li>
+            </ul>
+          </div>
+          <% end %>
+        <% end %>
+      </div>
+    </div>
+  </div>
+  <div class="container">
+    <%= raw(flash_message) %>
+    <%= yield %>
+  </div>
+</body>
+</html>

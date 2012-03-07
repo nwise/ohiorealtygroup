@@ -3,4 +3,9 @@ class User < ActiveRecord::Base
 
   has_many :roles_users
   has_many :roles, :through => :roles_users
+  
+  def is_admin?
+    true
+  end
+  
 end

@@ -1,4 +1,4 @@
-class Admin::PageVersionsController < ApplicationController
+class Admin::PageVersionsController < AdminController
   before_filter :check_authentication
   
   def show

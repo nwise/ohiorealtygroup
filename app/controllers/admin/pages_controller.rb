@@ -1,5 +1,5 @@
-class Admin::PagesController < ApplicationController
-  before_filter :get_title, :check_authentication
+class Admin::PagesController < AdminController
+  before_filter :get_title
   #
   # GET /admin/pages
   def index
