@@ -85,4 +85,12 @@ class Admin::RealtorsController < AdminController
       end
     end
   end
+  
+  def sort
+    Realtor.all.each do |realtor|
+      realtor.position = params[:realtor].index(realtor.id.to_s) + 1
+      realtor.save
+    end
+    render :nothing => true
+  end
 end
