@@ -81,9 +81,9 @@ class Admin::MenuItemsController < AdminController
   end
 
   def sort
-    @menu_item = MenuItem.find(params[:id])
+    @menu_item = MenuItem.find(params[:menu_item].first).parent
     @menu_item.children.each do |child|
-      child.position = params['menu-item-list'].index(child.id.to_s) + 1
+      child.position = params[:menu_item].index(child.id.to_s) + 1
       child.save
     end
     render :nothing => true

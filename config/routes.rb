@@ -12,14 +12,9 @@ ActionController::Routing::Routes.draw do |map|
   map.connect 'our-realtors', :controller => 'realtors'
 
   map.resources :pages, :menu_items
-
-  %w[show_form hide_form].each do |route|
-      map.connect "admin/pages/#{route}", :controller => 'admin/pages', :action => "#{route}"
-  end
   
   map.namespace :admin do |admin|
-    admin.resources :pages, :member => {:show_form => :any,
-                                        :hide_form => :any}
+    admin.resources :pages
     admin.resources :menu_items, :member => {:sort =>:any}
     admin.resources :page_versions, :member => {:restore => :any}
     admin.resources :users

@@ -1,4 +1,4 @@
-<%= form_for([:admin, @menu_item]) do |f| %>
+<%= form_for([:admin, @menu_item], :html => {:class =>'form-horizontal'}) do |f| %>
    
   <% if @menu_item.parent.nil? && params[:parent_id] %>
     <%= f.hidden_field :parent_id, :value => params[:parent_id] %>  
@@ -6,17 +6,30 @@
     <p><strong>Parent</strong>: <%= @menu_item.parent.label %></p>
   <% end %>
 
-  <p>
+  <%= content_tag :div, :class => 'control-group' do %> 
     <%= f.label :label %>
-    <%= f.text_field :label %>
-  </p>
+    <%= content_tag :div, :class => 'controls' do %>
+      <%= f.text_field :label, :class => 'input-xlarge' %>
+    <% end %>
+  <% end %>
   
-  <p>
-    <%= f.label :page_id, 'Page' %> <%= f.collection_select :page_id, Page.published, :id, :url_tag, {:include_blank => true} %> <strong>OR</strong>
-    <%= f.label :url, 'Path' %> <%= f.text_field :url %>
-  </p>
+  <%= content_tag :div, :class => 'control-group' do %>
+    <%= f.label :page_id, 'Page' %>
+    <%= content_tag :div, :class => 'controls' do %>
+      <%= f.collection_select :page_id, Page.published, :id, :url_tag, {:include_blank => true} %> 
+    <% end %>
+  <% end %>
+  
+  <%= content_tag :div, :class => 'control-group' do %>
+    <%= f.label :url, 'Path', :class => 'input-xlarge' %>
+    <%= content_tag :div, :class => 'controls' do %>
+      <%= f.text_field :url %>
+    <% end %>
+  <% end %>
 
-  <p>
-    <%= f.submit "Save" %>
-  </p>
+  <%= content_tag :div, :class => 'form-actions' do %>
+    <%= f.submit 'Create Menu Item', :class => 'btn btn-primary' %>
+    <%= link_to 'Back', admin_menu_items_path, :class => 'btn' %>
+  <% end %>
+
 <% end %>

@@ -1,22 +1,51 @@
-<h1>Menu Items</h1>
-
+<script type='text/javascript'>
+$(document).ready(function(){
+	$('#menu').sortable({
+		axis: 'y',
+		dropOnEmpty: false,
+		cursor: 'crosshair',
+		items: 'li',
+		opacity: 0.4,
+		scroll: true,
+		update: function(){
+			$.ajax({
+				type: 'post',
+				data: $('#menu').sortable('serialize'),
+				dataType: 'json',
+				complete: function(request){
+					$('#menu').effect('highlight');
+				},
+				url: '/admin/menu_items/sort'
+			})
+		}
+	});
+});
+</script>
+<%= content_tag :div, :class => 'page-header' do %>
+  <%= content_tag :h1 do %>
+  Menu Admin
+  <% end %>
+<% end %>
+<h6>Drag & Drop to reorder the menu</h6>
+<p>
 <% @menu_items.each do |m| -%>
   <ul>
-  <li><%= "#{m.label.titleize}" %>
-      <%= link_to(image_tag('admin_icons/add.png'), 
+  <li style='list-style-type:none;width:35%'><%= "#{m.label.titleize}" %>
+      <%= link_to("<i class='icon-play-circle icon-white'></i>&nbsp; Add Submenu".html_safe,
                   new_admin_menu_item_path(:parent_id => m.id),
                   :id => "#{m.id}_add_child",
-                  :title => 'add-child') %>
-      <%= link_to(image_tag('admin_icons/edit.png'),
-                  edit_admin_menu_item_path(m)) %>
-      <%= link_to(image_tag('admin_icons/delete.png'), admin_menu_item_path(m),
+                  :title => 'add-child',
+                  :class => 'btn btn-success') %>
+      <%#= link_to("<i class='icon-edit icon-white'></i>&nbsp; Edit Menu Item".html_safe,
+                  edit_admin_menu_item_path(m), :class => 'btn btn-primary') %>
+      <%= link_to("<i class='icon-trash icon-white'></i>&nbsp; Delete Menu".html_safe, admin_menu_item_path(m),
                                                       :confirm => 'Are you sure?',
-                                                      :method => :delete) %>
-    <ul>
-      <%= raw(draw_menu_tree(m)) %>
+                                                      :method => :delete, :class => 'btn btn-danger') %>
+    <ul id="menu">
+      <%= render :partial => 'list', :locals => {:menu_item => m} %>
     </ul>
     </li>
   </ul>
 <% end -%>
-
-<%= link_to 'New Menu Item', new_admin_menu_item_path %>
+</p>
+<%#= link_to "<i class='icon-play-circle icon-white'></i>&nbsp;Add a Menu".html_safe, new_admin_menu_item_url, :class => 'btn btn-success' %>
