@@ -17,7 +17,7 @@ class ContactUsForm < ActiveRecord::Base
   column :company,                  :string
   column :comments,                 :text
 
-  validates_email_format_of :email_address
+#  validates_email_format_of :email_address
   validates_presence_of :first_name, :last_name, :address1, :city, :state, :zip, :phone, :email_address
 
   validates_format_of :phone,

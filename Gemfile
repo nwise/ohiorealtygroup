@@ -1,6 +1,6 @@
 source 'http://rubygems.org'
 
-gem 'rails', '3.0.6'
+gem 'rails', '3.0.18'
 gem "authlogic", :git => 'git://github.com/railsware/authlogic.git'
 gem 'will_paginate', "3.0"
 #gem "searchlogic"
@@ -20,7 +20,6 @@ group :development, :test, :cucumber do
   gem 'heroku'
   gem "taps"
   gem 'capybara'
-  gem 'ruby-debug'
   gem 'database_cleaner'
 end
 
