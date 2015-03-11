@@ -38,5 +38,6 @@ module Ohiorealtygroup
 
     # Configure sensitive parameters which will be filtered from the log file.
     config.filter_parameters += [:password, :password_confirmation]
+    ActionController::Base.config.relative_url_root = ''
   end
 end
