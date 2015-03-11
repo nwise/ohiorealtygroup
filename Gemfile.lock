@@ -103,6 +103,8 @@ GEM
     nokogiri (1.5.6)
     pg (0.14.1)
     polyglot (0.3.3)
+    puma (2.11.1)
+      rack (>= 1.1, < 2.0)
     rack (1.2.7)
     rack-mount (0.6.14)
       rack (>= 1.0.0)
@@ -185,6 +187,7 @@ DEPENDENCIES
   heroku
   pg
   prototype_legacy_helper (= 0.0.0)!
+  puma
   rails (= 3.0.18)
   rspec
   rspec-rails

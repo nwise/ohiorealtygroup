@@ -4,3 +4,4 @@ log/test.log
 log/*.log
 tmp/*
 tags
+.env
