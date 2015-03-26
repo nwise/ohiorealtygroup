@@ -1,10 +1,4 @@
 GIT
-  remote: git://github.com/rails/prototype_legacy_helper.git
-  revision: a2cd95c3e3c1a4f7a9566efdab5ce59c886cb05f
-  specs:
-    prototype_legacy_helper (0.0.0)
-
-GIT
   remote: git://github.com/railsware/authlogic.git
   revision: 4be0a3e6b642aa917f7d701165f4765248be8713
   specs:
@@ -186,7 +180,6 @@ DEPENDENCIES
   factory_girl
   heroku
   pg
-  prototype_legacy_helper (= 0.0.0)!
   puma
   rails (= 3.0.18)
   rspec
