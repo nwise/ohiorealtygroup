@@ -32,4 +32,8 @@ Ohiorealtygroup::Application.configure do
   # Print deprecation notices to the stderr
   config.active_support.deprecation = :stderr
   config.contact_recipient = 'nathanwise@gmail.com'
+
+
+  config.serve_static_files = true
+  config.static_cache_control = 'public, max-age=3600'
 end

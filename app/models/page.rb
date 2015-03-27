@@ -1,6 +1,6 @@
 class Page < ActiveRecord::Base
-  acts_as_versioned :foreign_key => 'page_id'
-  has_many :page_versions
+  #acts_as_versioned :foreign_key => 'page_id'
+  #has_many :page_versions
   before_save :set_url_tag
   validates_presence_of :title, :content
 
