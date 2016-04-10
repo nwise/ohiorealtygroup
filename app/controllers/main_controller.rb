@@ -1,14 +1,13 @@
 class MainController < ApplicationController
   auto_complete_for :page, :title
   skip_before_filter :verify_authenticity_token, :only => [:auto_complete_for_page_title]
-  # def index need not be defined because Rails will simply render the index.html.erb file in views/main
 
   def content_page
-    
-    @page = Page.find_by_url_tag(params[:path])
-    
+
+    @page = Page.find_by_url_tag(params[:path]) || Page.find_by_url_tag("index")
+
     unless @page.nil?
-      
+
       @title = @page.html_title
       @h1 = @page.title
 
