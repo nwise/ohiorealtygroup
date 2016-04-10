@@ -9,6 +9,9 @@ Ohiorealtygroup::Application::routes.draw do
   get "login", to: 'user_sessions#new'
   get "logout", to: 'user_sessions#destroy'
   get "admin", to: "admin/pages#index"
+  get "our-realtors", to: "realtors#index"
+  get "contact-us", to: "contact#contact_us"
+  post "contact-us", to: "contact#contact_us"
 
   resources :pages
   resources :menu_items

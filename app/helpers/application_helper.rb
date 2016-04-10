@@ -46,7 +46,7 @@ module ApplicationHelper
         render :text => '' #:nothing => true
       end
       render :partial => "shared/menu_#{direction}", :locals => {:menu => menu, :id => id}
-     end
+    end
   end
 
   def sort_link(title, field, options = {})
