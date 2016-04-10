@@ -15,6 +15,7 @@ group :assets do
 end
 
 group :development, :test, :cucumber do
+  gem 'pry'
   gem 'cucumber'
   gem 'cucumber-rails'
   gem 'webrat'
