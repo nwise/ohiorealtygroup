@@ -1,5 +1,7 @@
 source 'http://rubygems.org'
 
+ruby '2.1.5'
+
 gem 'rails', '3.1.12'
 gem "authlogic", :git => 'git://github.com/railsware/authlogic.git'
 gem 'will_paginate', "3.0"
