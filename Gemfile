@@ -7,6 +7,7 @@ gem 'pg'
 gem 'acts_as_versioned'
 gem 'puma'
 gem 'jquery-rails'
+gem 'rails_12factor'
 
 group :assets do
   gem 'sass-rails', '~>3.1.7'
