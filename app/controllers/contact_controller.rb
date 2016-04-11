@@ -3,7 +3,7 @@ class ContactController < ApplicationController
   def contact_us
     @title = "Contact Us"
     @contact_us_form = ContactUsForm.new(params[:contact_us_form])
-    
+
     unless request.post?
       @contact_us_form = ContactUsForm.new
     else

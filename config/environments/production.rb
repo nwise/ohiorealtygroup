@@ -12,8 +12,9 @@ Ohiorealtygroup::Application.configure do
   # Specifies the header that your server uses for sending files
   config.action_dispatch.x_sendfile_header = "X-Sendfile"
 
-  config.assets.compress = true
-  config.assets.compile = true
+  config.assets.compress = false
+  config.assets.compile = false
+  config.assets.debug = true
   config.assets.digest = true
 
   # For nginx:
