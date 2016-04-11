@@ -36,8 +36,9 @@ module Ohiorealtygroup
     # Configure the default encoding used in templates for Ruby 1.9.
     config.encoding = "utf-8"
     
-    config.assets.enabled = true
+    config.assets.enabled = false
     config.assets.version = '1.0'
+    config.assets.serve_static_assets = true
 
     # Configure sensitive parameters which will be filtered from the log file.
     config.filter_parameters += [:password, :password_confirmation]
