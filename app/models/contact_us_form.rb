@@ -1,23 +1,11 @@
-class ContactUsForm < ActiveRecord::Base
+class ContactUsForm
+  include ActiveModel::Validations
+  include ActiveModel::Conversion
+  extend ActiveModel::Naming
 
-  def self.columns() @columns ||= []; end
-  def self.column(name, sql_type = nil, default = nil, null = true)
-    columns << ActiveRecord::ConnectionAdapters::Column.new(name.to_s, default, sql_type.to_s, null)
-  end
 
-  column :first_name,               :string
-  column :last_name,                :string
-  column :address1,                 :string
-  column :address2,                 :string
-  column :city,                     :string
-  column :state,                    :string
-  column :zip,                      :string
-  column :phone,                    :string
-  column :email_address,            :string
-  column :company,                  :string
-  column :comments,                 :text
+  attr_accessor :first_name, :last_name, :address1, :address2, :city, :state, :zip, :phone, :email_address, :company, :comments
 
-#  validates_email_format_of :email_address
   validates_presence_of :first_name, :last_name, :address1, :city, :state, :zip, :phone, :email_address
 
   validates_format_of :phone,
@@ -37,4 +25,15 @@ class ContactUsForm < ActiveRecord::Base
                                      NJ NM NY NC ND OH OK OR PA RI SC SD TN TX UT
                                      VT VA WA WV WI WY},
                           :message => "must choose a state"
+  def initialize(attributes = {})
+    if attributes
+      attributes.each do |name, value|
+        send("#{name}=", value)
+      end
+    end
+  end
+
+  def persisted?
+    false
+  end
 end

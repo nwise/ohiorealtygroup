@@ -10,9 +10,9 @@ class ContactController < ApplicationController
       if @contact_us_form.valid?
         message = ContactMailer.contact_us_email(@contact_us_form)
         message.deliver
-        redirect_to :action => :thank_you
+        render :thank_you
       else
-        render :action => :contact_us
+        render :contact_us
       end
     end
   end
