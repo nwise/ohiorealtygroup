@@ -52,5 +52,5 @@ Ohiorealtygroup::Application.configure do
   # Send deprecation notices to registered listeners
   config.active_support.deprecation = :notify
 
-  CONTACT_FORM_RECIPIENT = 'phil@pjmarch.com'
+  config.contact_recipient = 'phil@pjmarch.com'
 end
